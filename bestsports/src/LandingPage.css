@@ -1,0 +1,39 @@
+body {
+    background-image: url('lebron.jpg');
+    background-size:     cover;                      /* <------ */
+   
+}
+
+#title {
+    padding-left: 150px;
+    padding-top: 150px;
+    font-size: 100px;
+    color: white;
+}
+
+#description {
+    padding-left: 150px;
+    font-size: 30px;
+    color: gray;
+}
+
+#browse {
+    margin-top: 300px;
+    margin-left: 200px;
+    background-color: #45445A;
+    border: none;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
