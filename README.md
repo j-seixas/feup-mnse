@@ -1,7 +1,7 @@
 # mnse
 ⚽ Sport's website for MNSE course's project 🏀
 
-Using [**React**](https://reactjs.org/) and [**Shards-React**])(https://designrevision.com/downloads/shards-react/)
+Using [**React**](https://reactjs.org/) and [**Shards-React**](https://designrevision.com/downloads/shards-react/)
 
 Documentation here:
 * https://reactjs.org/docs/getting-started.html
