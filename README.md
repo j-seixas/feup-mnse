@@ -10,5 +10,6 @@ Documentation here:
 To run the app in dev mode: 
 ```
 cd bestsports
+npm i
 npm start
 ```
