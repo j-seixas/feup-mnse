@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Button } from "shards-react";
-import background from './lebron.jpg';
+import background from '../Assets/lebron.jpg';
 import './LandingPage.css';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "shards-ui/dist/css/shards.min.css"

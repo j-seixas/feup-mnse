@@ -1,5 +1,5 @@
 body {
-    background-image: url('lebron.jpg');
+    background-image: url('../Assets/lebron.jpg');
     background-size:     cover;                      /* <------ */
    
 }
