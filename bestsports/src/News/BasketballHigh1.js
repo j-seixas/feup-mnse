@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Container, Row, Col} from "shards-react";
-import '../HomePage/App';
 import NavbarComponent from '../Components/NavbarComponent'
 import "bootstrap/dist/css/bootstrap.min.css";
 import "shards-ui/dist/css/shards.min.css"
@@ -15,7 +14,6 @@ class App extends Component {
     render() {
         return (
             <div className="App">
-            <NavbarComponent/>
             <Container>
                 <Row>
                     <Col>

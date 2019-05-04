@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Button, Container, Row, Col, Card, CardBody, CardImg, FormInput} from "shards-react";
-import '../HomePage/App';
+import { NavLink } from "react-router-dom";
 import NavbarComponent from '../Components/NavbarComponent'
 import "bootstrap/dist/css/bootstrap.min.css";
 import "shards-ui/dist/css/shards.min.css"
@@ -15,7 +15,6 @@ class App extends Component {
     render() {
         return (
             <div className="App">
-            <NavbarComponent/>
             
             <Container>
                 <Row>
@@ -73,19 +72,23 @@ class App extends Component {
                         </Row>
                         <Row>
                         <Card style={this.cardStyle}>
+                            <NavLink to="/basketballnews">
                                 <CardImg top src="https://bdn-data.s3.amazonaws.com/uploads/2019/05/28558261_H24763019.JPG" />
                                 <CardBody>
                                     <p>Os Celtics são porreiros</p>
                                 </CardBody>
-                            </Card>
+                            </NavLink>
+                        </Card>
                         </Row>
                         <Row>
                         <Card style={this.cardStyle}>
+                            <NavLink to="/basketballnews">
                                 <CardImg top src="https://bdn-data.s3.amazonaws.com/uploads/2019/05/28558261_H24763019.JPG" />
                                 <CardBody>
                                     <p>Os Celtics são porreiros</p>
                                 </CardBody>
-                            </Card>
+                            </NavLink>
+                        </Card>
                         </Row>
                     </Col>
                     <Col>
@@ -96,19 +99,23 @@ class App extends Component {
                         </Row>
                         <Row>
                         <Card style={this.cardStyle}>
+                            <NavLink to="/basketballnews">
                                 <CardImg top src="https://bdn-data.s3.amazonaws.com/uploads/2019/05/28558261_H24763019.JPG" />
                                 <CardBody>
                                     <p>Os Celtics são porreiros</p>
                                 </CardBody>
-                            </Card>
+                            </NavLink>
+                        </Card>
                         </Row>
                         <Row>
                         <Card style={this.cardStyle}>
+                            <NavLink to="/basketballnews">
                                 <CardImg top src="https://bdn-data.s3.amazonaws.com/uploads/2019/05/28558261_H24763019.JPG" />
                                 <CardBody>
                                     <p>Os Celtics são porreiros</p>
                                 </CardBody>
-                            </Card>
+                            </NavLink>
+                        </Card>
                         </Row>
                     </Col>
                 </Row>

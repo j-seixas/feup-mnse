@@ -5,6 +5,7 @@ import { Navbar,
     Nav,
     NavItem,
     Button} from "shards-react";
+import { NavLink } from "react-router-dom";
 
 class NavbarComponent extends Component {
     constructor(props) {
@@ -46,20 +47,26 @@ class NavbarComponent extends Component {
             
                     <Nav navbar className="ml-auto">
                         <NavItem>
-                            <Button theme="dark" href="#">
-                                Home
-                            </Button>
+                            <NavLink to="/">
+                                <Button theme="dark" href="#">
+                                    Home
+                                </Button>
+                            </NavLink>
                             
                         </NavItem>
                         <NavItem>
-                            <Button theme="dark" href="#">
-                                Basketball
-                            </Button>
+                            <NavLink to="/basketball">
+                                <Button theme="dark" href="#">
+                                    Basketball
+                                </Button>
+                            </NavLink>
                         </NavItem>
                         <NavItem>
-                            <Button theme="dark" href="#">
-                                Football
-                            </Button>
+                            <NavLink to="/football">
+                                <Button theme="dark" href="#">
+                                    Football
+                                </Button>
+                            </NavLink>
                         </NavItem>
                     </Nav>
 

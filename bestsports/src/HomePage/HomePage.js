@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Container, Row, Col, Card, CardBody, CardImg} from "shards-react";
-import './App.css';
+import { NavLink } from "react-router-dom";
+import './HomePage.css';
 import NavbarComponent from '../Components/NavbarComponent'
 import "bootstrap/dist/css/bootstrap.min.css";
 import "shards-ui/dist/css/shards.min.css"
@@ -15,7 +16,6 @@ class App extends Component {
     render() {
         return (
             <div className="App">
-            <NavbarComponent/>
             
             <Container>
                 <Row>
@@ -47,20 +47,24 @@ class App extends Component {
                     </Col>
                     <Col>
                         <Row>
-                            <Card style={this.cardStyle}>
-                                <CardImg top src="https://bdn-data.s3.amazonaws.com/uploads/2019/05/28558261_H24763019.JPG" />
-                                <CardBody>
-                                    <p>Os Celtics são porreiros</p>
-                                </CardBody>
-                            </Card>
+                            <NavLink to="/basketballnews">
+                                <Card style={this.cardStyle}>
+                                    <CardImg top src="https://bdn-data.s3.amazonaws.com/uploads/2019/05/28558261_H24763019.JPG" />
+                                    <CardBody>
+                                        <p>Os Celtics são porreiros</p>
+                                    </CardBody>
+                                </Card>
+                            </NavLink>
                         </Row>
                         <Row>
-                            <Card style={this.cardStyle}>
-                                <CardImg top src="https://main-bet.com/uploads/posts/2019-01/1547109034_sporting-lisbon-fc-porto-h2h-fc-porto-vs-sporting-cp-highlights.jpg" />
-                                <CardBody>
-                                    <p>Porto vs Sporting é uma merda</p>
-                                </CardBody>
-                            </Card>
+                            <NavLink to="/footballnews">
+                                <Card style={this.cardStyle}>
+                                    <CardImg top src="https://main-bet.com/uploads/posts/2019-01/1547109034_sporting-lisbon-fc-porto-h2h-fc-porto-vs-sporting-cp-highlights.jpg" />
+                                    <CardBody>
+                                        <p>Porto vs Sporting é uma merda</p>
+                                    </CardBody>
+                                </Card>
+                            </NavLink>
                         </Row>
                     </Col>
                     <Col>
