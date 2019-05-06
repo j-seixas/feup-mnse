@@ -17,12 +17,6 @@ class App extends Component {
         }  
     }
 
-    cardStyle = {
-        display: 'block',
-        width: '20vw',
-        height: '20vw'
-    };
-
     playAudio(previewUrl) {
         let audio = new Audio(previewUrl);
         if (!this.state.playing) {
@@ -60,44 +54,44 @@ class App extends Component {
                             <h1>Some Basketball Scores</h1>
                         </Row>
                         <Row>
-                            Boston Celtics 108 - 107 Milwaukee Bucks
+                            Philadelphia 76ers 102 - 111 Brooklyn Nets
                         </Row>
                         <Row>
-                            Boston Celtics 108 - 107 Milwaukee Bucks
+                            Toronto Raptors 101 - 104 Orlando Magic
                         </Row>
                         <Row>
-                            Boston Celtics 108 - 107 Milwaukee Bucks
+                            GS Warriors 121 - 104 LA Clippers
                         </Row>
                         <Row>
-                            Boston Celtics 108 - 107 Milwaukee Bucks
+                            Denver Nuggets 96 - 101 SA Spurs
                         </Row>
                         <Row>
-                            Boston Celtics 108 - 107 Milwaukee Bucks
+                            Boston Celtics 84 - 74 Indiana Pacers
                         </Row>
                         <Row>
-                            Boston Celtics 108 - 107 Milwaukee Bucks
+                            POR Trail Blazers 104 - 99 OKC Thunder
                         </Row>
                         <Row>
-                            Boston Celtics 108 - 107 Milwaukee Bucks
+                            Milwaukee Bucks 121 - 86 Detroit Pistons
                         </Row>
                     </Col>
                     <Col>
                         <Row>
                             <NavLink to="/basketballnews">
-                                <Card style={this.cardStyle}>
-                                    <CardImg top src="https://bdn-data.s3.amazonaws.com/uploads/2019/05/28558261_H24763019.JPG" />
+                                <Card>
+                                    <CardImg top src="http://bit.ly/2ZZO31G" />
                                     <CardBody>
-                                        <p>Os Celtics são porreiros</p>
+                                        <p>Magic stun No. 2 seed Raptors in final moments of Game 1</p>
                                     </CardBody>
                                 </Card>
                             </NavLink>
                         </Row>
                         <Row>
                             <NavLink to="/footballnews">
-                                <Card style={this.cardStyle}>
-                                    <CardImg top src="https://main-bet.com/uploads/posts/2019-01/1547109034_sporting-lisbon-fc-porto-h2h-fc-porto-vs-sporting-cp-highlights.jpg" />
+                                <Card>
+                                    <CardImg top src="http://jornaldoluxemburgo.com/wp-content/uploads/2017/12/DOC.20171201.23347392.MA414.jpg" />
                                     <CardBody>
-                                        <p>Porto vs Sporting é uma merda</p>
+                                        <p>Sporting “atropela” Belenenses SAD no Jamor (8-1) com hat-trick de Bruno Fernandes e regresso de Dost </p>
                                     </CardBody>
                                 </Card>
                             </NavLink>
@@ -108,22 +102,25 @@ class App extends Component {
                             <h1>Some Football Scores</h1>
                         </Row>
                         <Row>
-                            FC Porto 2 - 0 FC Barcelona
+                            FC Porto 4 - 0 Desportivo das Aves
                         </Row>
                         <Row>
-                            SC Sporting 5 - 3 Liverpool
+                            SC Sporting 8 - 1 Belenenses SAD
                         </Row>
                         <Row>
-                            FC Porto 2 - 0 FC Barcelona
+                            Moreirense 1 - 2 Rio Ave
                         </Row>
                         <Row>
-                            SC Sporting 5 - 3 Liverpool
+                            Feirense 4 - 4 Desportivo Chaves
                         </Row>
                         <Row>
-                            FC Porto 2 - 0 FC Barcelona
+                            Marítimo 1 - 0 SC Braga
                         </Row>
                         <Row>
-                            SC Sporting 5 - 3 Liverpool
+                            Tondela 1 - 3 Santa Clara
+                        </Row>
+                        <Row>
+                            Vitória SC 2 - 2 Nacional da Madeira
                         </Row>
                     </Col>
                 </Row>

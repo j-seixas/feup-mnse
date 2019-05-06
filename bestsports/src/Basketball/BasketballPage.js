@@ -71,21 +71,21 @@ class App extends Component {
                             <FormInput placeholder="Search..." />
                         </Row>
                         <Row>
-                        <Card style={this.cardStyle}>
                             <NavLink to="/basketballnews">
-                                <CardImg top src="https://bdn-data.s3.amazonaws.com/uploads/2019/05/28558261_H24763019.JPG" />
-                                <CardBody>
-                                    <p>Os Celtics são porreiros</p>
-                                </CardBody>
+                                <Card>
+                                    <CardImg top src="http://bit.ly/2ZZO31G" />
+                                    <CardBody>
+                                        <p>Magic stun No. 2 seed Raptors in final moments of Game 1</p>
+                                    </CardBody>
+                                </Card>
                             </NavLink>
-                        </Card>
                         </Row>
                         <Row>
                         <Card style={this.cardStyle}>
-                            <NavLink to="/basketballnews">
-                                <CardImg top src="https://bdn-data.s3.amazonaws.com/uploads/2019/05/28558261_H24763019.JPG" />
+                            <NavLink to="/basketballphil">
+                                <CardImg top src="http://bit.ly/2YaKeoE" />
                                 <CardBody>
-                                    <p>Os Celtics são porreiros</p>
+                                    <p>Brooklyn Nets escape with Game 1 win against 76ers.</p>
                                 </CardBody>
                             </NavLink>
                         </Card>
@@ -102,7 +102,7 @@ class App extends Component {
                             <NavLink to="/basketballnews">
                                 <CardImg top src="https://bdn-data.s3.amazonaws.com/uploads/2019/05/28558261_H24763019.JPG" />
                                 <CardBody>
-                                    <p>Os Celtics são porreiros</p>
+                                    <p></p>
                                 </CardBody>
                             </NavLink>
                         </Card>

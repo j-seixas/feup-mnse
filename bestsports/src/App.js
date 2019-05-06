@@ -4,9 +4,10 @@ import {BrowserRouter, Route} from "react-router-dom";
 import Home from "./HomePage/HomePage";
 import Basketball from "./Basketball/BasketballPage";
 import Football from "./Football/FootballPage";
-import BasketballNews from "./News/BasketballHigh1";
+import BasketballNews from "./News/BasketballHighOne";
 import FootballNews from "./News/FootballHigh1";
 import NavbarComponent from './Components/NavbarComponent';
+import BasketballNewsTwo from "./News/BasketballHighTwo"
 
 class App extends Component {
     render() {
@@ -20,6 +21,7 @@ class App extends Component {
                     <Route path="/football" component={Football}/>
                     <Route path="/basketballnews" component={BasketballNews}/>
                     <Route path="/footballnews" component={FootballNews}/>
+                    <Route path="/basketballphil" component={BasketballNewsTwo}/>
                 </div>
 
             </BrowserRouter>
