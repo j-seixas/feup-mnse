@@ -6,12 +6,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "shards-ui/dist/css/shards.min.css"
 
 class App extends Component {
-    cardStyle = {
-        display: 'block',
-        width: '20vw',
-        height: '20vw'
-    };
-
     render() {
         return (
             <div className="App">
@@ -81,8 +75,8 @@ class App extends Component {
                             </NavLink>
                         </Row>
                         <Row>
-                        <Card style={this.cardStyle}>
-                            <NavLink to="/basketballphil">
+                            <Card>
+                            <NavLink to="/bballphilly">
                                 <CardImg top src="http://bit.ly/2YaKeoE" />
                                 <CardBody>
                                     <p>Brooklyn Nets escape with Game 1 win against 76ers.</p>
@@ -98,24 +92,24 @@ class App extends Component {
                         <Button theme="secondary">Success</Button>
                         </Row>
                         <Row>
-                        <Card style={this.cardStyle}>
-                            <NavLink to="/basketballnews">
-                                <CardImg top src="https://bdn-data.s3.amazonaws.com/uploads/2019/05/28558261_H24763019.JPG" />
-                                <CardBody>
-                                    <p></p>
-                                </CardBody>
+                            <NavLink to="/bballhouston">
+                                <Card>
+                                    <CardImg top src="https://s.hdnux.com/photos/01/02/15/36/17356687/3/920x920.jpg" />
+                                    <CardBody>
+                                        <p>Houston Rockets beat Golden State behind Harden's 38 points</p>
+                                    </CardBody>
+                                </Card>
                             </NavLink>
-                        </Card>
                         </Row>
                         <Row>
-                        <Card style={this.cardStyle}>
-                            <NavLink to="/basketballnews">
-                                <CardImg top src="https://bdn-data.s3.amazonaws.com/uploads/2019/05/28558261_H24763019.JPG" />
-                                <CardBody>
-                                    <p>Os Celtics são porreiros</p>
-                                </CardBody>
+                            <NavLink to="/bballceltics">
+                                <Card>
+                                    <CardImg top src="https://bdn-data.s3.amazonaws.com/uploads/2019/05/28558261_H24763019.JPG" />
+                                    <CardBody>
+                                        <p>Celtics on the verge of getting eliminated by the Bucks.</p>
+                                    </CardBody>
+                                </Card>
                             </NavLink>
-                        </Card>
                         </Row>
                     </Col>
                 </Row>

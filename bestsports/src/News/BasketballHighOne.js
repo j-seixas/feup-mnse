@@ -1,19 +1,12 @@
 import React, { Component } from 'react';
 import { Container, Row, Col} from "shards-react";
-import NavbarComponent from '../Components/NavbarComponent'
 import "bootstrap/dist/css/bootstrap.min.css";
 import "shards-ui/dist/css/shards.min.css"
 
-class App extends Component {
-    cardStyle = {
-        display: 'block',
-        width: '10vw',
-        height: '20vw'
-    };
-
+class BasketballOne extends Component {
     render() {
         return (
-            <div className="App">
+            <div>
             <Container>
                 <Row>
                     <Col>
@@ -54,4 +47,4 @@ class App extends Component {
     }
 }
 
-export default App;
+export default BasketballOne;

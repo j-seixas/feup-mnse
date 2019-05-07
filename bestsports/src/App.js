@@ -7,7 +7,9 @@ import Football from "./Football/FootballPage";
 import BasketballNews from "./News/BasketballHighOne";
 import FootballNews from "./News/FootballHigh1";
 import NavbarComponent from './Components/NavbarComponent';
-import BasketballNewsTwo from "./News/BasketballHighTwo"
+import BasketballNewsTwo from "./News/BasketballHighTwo";
+import BasketballNewsThree from "./News/BasketballThree";
+import BasketballNewsFour from "./News/BasketballFour";
 
 class App extends Component {
     render() {
@@ -21,7 +23,9 @@ class App extends Component {
                     <Route path="/football" component={Football}/>
                     <Route path="/basketballnews" component={BasketballNews}/>
                     <Route path="/footballnews" component={FootballNews}/>
-                    <Route path="/basketballphil" component={BasketballNewsTwo}/>
+                    <Route path="/bballphilly" component={BasketballNewsTwo}/>
+                    <Route path="/bballhouston" component={BasketballNewsThree}/>
+                    <Route path="/bballceltics" component={BasketballNewsFour}/>
                 </div>
 
             </BrowserRouter>
