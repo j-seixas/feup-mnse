@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Button, Container, Row, Col, Card, CardBody, CardImg } from "shards-react";
+import { Button, Container, Row, Col, Card, CardBody, CardImg, CardText } from "shards-react";
 import { NavLink } from "react-router-dom";
 import './HomePage.css';
 //import NavbarComponent from '../Components/NavbarComponent'
@@ -110,7 +110,19 @@ class App extends Component {
                                 <h1>Some Football Scores</h1>
                             </Row>
                             <Row>
-                                FC Porto 4 - 0 Desportivo das Aves
+                                <Card small >
+                                    <CardBody>
+                                        FC Porto 4 - 0 Desportivo das Aves
+                                    </CardBody>
+
+                                </Card>
+                                <Card small >
+                                    <CardBody>
+                                        SC Sporting 8 - 1 Belenenses SAD
+                                    </CardBody>
+
+                                </Card>
+                                
                             </Row>
                             <Row>
                                 SC Sporting 8 - 1 Belenenses SAD
