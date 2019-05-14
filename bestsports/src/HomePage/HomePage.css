@@ -1,5 +1,8 @@
 .App {
     text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .App-logo {
@@ -21,6 +24,16 @@
 
 .App-link {
     color: #61dafb;
+}
+
+.scoreBar {
+    width: 25%;
+    flex-grow: 1;
+}
+
+.highlights {
+    width: 50%;
+    flex-grow: 2;
 }
 
 @keyframes App-logo-spin {
