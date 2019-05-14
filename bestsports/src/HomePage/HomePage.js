@@ -110,9 +110,32 @@ class App extends Component {
                                 <h1>Some Football Scores</h1>
                             </Row>
                             <Row>
-                                <Card small >
-                                    <CardBody>
-                                        FC Porto 4 - 0 Desportivo das Aves
+                                <Card small className="scoresWrapper">
+                                    <CardBody className="scoreLine" small>
+                                        <p className="leftTeam">FC Porto</p>
+                                        <p className="score">4 - 0</p>
+                                        <p className="rightTeam">Desportivo das Aves</p>
+                                          
+                                    </CardBody>
+                                    <CardBody className="scoreLine" small>
+                                        <p className="leftTeam">SC Sporting</p>
+                                        <p className="score">8 - 1</p>
+                                        <p className="rightTeam">Belenenses SAD</p>
+                                    </CardBody>
+                                    <CardBody className="scoreLine" small>
+                                        <p className="leftTeam">Moreirense</p>
+                                        <p className="score">1 - 2</p>
+                                        <p className="rightTeam">Rio Ave</p>
+                                    </CardBody>
+                                    <CardBody className="scoreLine" small>
+                                        <p className="leftTeam">Feirense</p>
+                                        <p className="score">4 - 4</p>
+                                        <p className="rightTeam">Desportivo Chaves</p>
+                                    </CardBody>
+                                    <CardBody className="scoreLine" small>
+                                        <p className="leftTeam">Marítimo</p>
+                                        <p className="score">1 - 0</p>
+                                        <p className="rightTeam">SC Braga</p>
                                     </CardBody>
 
                                 </Card>

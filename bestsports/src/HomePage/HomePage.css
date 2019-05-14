@@ -36,6 +36,32 @@
     flex-grow: 2;
 }
 
+.scoresWrapper {
+    width: 100%;
+}
+
+.scoreLine {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+}
+
+.score {
+    align-self: center;
+    flex: 1
+}
+
+.leftTeam, .rightTeam, .score {
+    margin: 0%;
+}
+
+.leftTeam, .rightTeam {
+    flex: 3;
+    font-weight: bold;
+    text-align: center;
+}
+
 @keyframes App-logo-spin {
     from {
         transform: rotate(0deg);
