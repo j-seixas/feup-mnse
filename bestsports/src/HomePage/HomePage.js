@@ -47,7 +47,7 @@ class App extends Component {
                 <div className="scoreBar">
                     <Container>
                         <Col>
-                        <h1 className="titleScoreBar">Basketball Scores</h1>
+                        <h1 className="titleScoreBar">Basketball<br></br>Scores</h1>
                             <Card small className="scoresWrapper">
                                 <CardBody className="scoreLine" small>
                                     <p className="leftTeam">Philadelphia 76ers</p>
@@ -120,7 +120,7 @@ class App extends Component {
                 <div className="scoreBar">
                     <Container>
                         <Col>
-                            <h1 className="titleScoreBar">Football Scores</h1>
+                            <h1 className="titleScoreBar">Football<br></br>Scores</h1>
                             <Card small className="scoresWrapper">
                                 <CardBody className="scoreLine" small>
                                     <p className="leftTeam">FC Porto</p>
