@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Button, Container, Row, Col, Card, CardBody, CardImg, CardText } from "shards-react";
+import { Button, Container, Row, Col, Card, CardBody, CardImg, Badge } from "shards-react";
 import { NavLink } from "react-router-dom";
 import './HomePage.css';
 //import NavbarComponent from '../Components/NavbarComponent'
@@ -106,65 +106,45 @@ class App extends Component {
                 <div className="scoreBar">
                     <Container>
                         <Col>
-                            <Row>
-                                <h1>Some Football Scores</h1>
-                            </Row>
-                            <Row>
-                                <Card small className="scoresWrapper">
-                                    <CardBody className="scoreLine" small>
-                                        <p className="leftTeam">FC Porto</p>
-                                        <p className="score">4 - 0</p>
-                                        <p className="rightTeam">Desportivo das Aves</p>
-                                          
-                                    </CardBody>
-                                    <CardBody className="scoreLine" small>
-                                        <p className="leftTeam">SC Sporting</p>
-                                        <p className="score">8 - 1</p>
-                                        <p className="rightTeam">Belenenses SAD</p>
-                                    </CardBody>
-                                    <CardBody className="scoreLine" small>
-                                        <p className="leftTeam">Moreirense</p>
-                                        <p className="score">1 - 2</p>
-                                        <p className="rightTeam">Rio Ave</p>
-                                    </CardBody>
-                                    <CardBody className="scoreLine" small>
-                                        <p className="leftTeam">Feirense</p>
-                                        <p className="score">4 - 4</p>
-                                        <p className="rightTeam">Desportivo Chaves</p>
-                                    </CardBody>
-                                    <CardBody className="scoreLine" small>
-                                        <p className="leftTeam">Marítimo</p>
-                                        <p className="score">1 - 0</p>
-                                        <p className="rightTeam">SC Braga</p>
-                                    </CardBody>
+                            <h1>Some Football Scores</h1>
+                            <Card small className="scoresWrapper">
+                                <CardBody className="scoreLine" small>
+                                    <p className="leftTeam">FC Porto</p>
+                                    <Badge className="score" outline pill theme="dark">4 - 0</Badge>
+                                    <p className="rightTeam">Desportivo das Aves</p>
 
-                                </Card>
-                                <Card small >
-                                    <CardBody>
-                                        SC Sporting 8 - 1 Belenenses SAD
-                                    </CardBody>
-
-                                </Card>
-                                
-                            </Row>
-                            <Row>
-                                SC Sporting 8 - 1 Belenenses SAD
-                            </Row>
-                            <Row>
-                                Moreirense 1 - 2 Rio Ave
-                            </Row>
-                            <Row>
-                                Feirense 4 - 4 Desportivo Chaves
-                            </Row>
-                            <Row>
-                                Marítimo 1 - 0 SC Braga
-                            </Row>
-                            <Row>
-                                Tondela 1 - 3 Santa Clara
-                            </Row>
-                            <Row>
-                                Vitória SC 2 - 2 Nacional da Madeira
-                            </Row>
+                                </CardBody>
+                                <CardBody className="scoreLine" small>
+                                    <p className="leftTeam">SC Sporting</p>
+                                    <Badge className="score" outline pill theme="dark">8 - 1</Badge>
+                                    <p className="rightTeam">Belenenses SAD</p>
+                                </CardBody>
+                                <CardBody className="scoreLine" small>
+                                    <p className="leftTeam">Moreirense</p>
+                                    <Badge className="score" outline pill theme="dark">1 - 2</Badge>
+                                    <p className="rightTeam">Rio Ave</p>
+                                </CardBody>
+                                <CardBody className="scoreLine" small>
+                                    <p className="leftTeam">Feirense</p>
+                                    <Badge className="score" outline pill theme="dark">4 - 4</Badge>
+                                    <p className="rightTeam">Desportivo Chaves</p>
+                                </CardBody>
+                                <CardBody className="scoreLine" small>
+                                    <p className="leftTeam">Marítimo</p>
+                                    <Badge className="score" outline pill theme="dark">1 - 0</Badge>
+                                    <p className="rightTeam">SC Braga</p>
+                                </CardBody>
+                                <CardBody className="scoreLine" small>
+                                    <p className="leftTeam">Tondela</p>
+                                    <Badge className="score" outline pill theme="dark">1 - 3</Badge>
+                                    <p className="rightTeam">Santa Clara</p>
+                                </CardBody>
+                                <CardBody className="scoreLine" small>
+                                    <p className="leftTeam">Vitória SC</p>
+                                    <Badge className="score" outline pill theme="dark">2 - 2</Badge>
+                                    <p className="rightTeam">Nacional da Madeira</p>
+                                </CardBody>
+                            </Card>
                         </Col>
                     </Container>
                 </div>
