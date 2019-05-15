@@ -4,12 +4,16 @@ import {BrowserRouter, Route} from "react-router-dom";
 import Home from "./HomePage/HomePage";
 import Basketball from "./Basketball/BasketballPage";
 import Football from "./Football/FootballPage";
-import BasketballNews from "./News/BasketballHighOne";
-import FootballNews from "./News/FootballHigh1";
-import NavbarComponent from './Components/NavbarComponent';
-import BasketballNewsTwo from "./News/BasketballHighTwo";
+import BasketballNews from "./News/BasketballOne";
+import BasketballNewsTwo from "./News/BasketballTwo";
 import BasketballNewsThree from "./News/BasketballThree";
 import BasketballNewsFour from "./News/BasketballFour";
+import FootballNews from "./News/FootballOne";
+import FootballNewsTwo from "./News/FootballTwo";
+import FootballNewsThree from "./News/FootballThree";
+import FootballNewsFour from "./News/FootballFour";
+import NavbarComponent from './Components/NavbarComponent';
+
 
 class App extends Component {
     render() {
@@ -26,6 +30,9 @@ class App extends Component {
                     <Route path="/bballphilly" component={BasketballNewsTwo}/>
                     <Route path="/bballhouston" component={BasketballNewsThree}/>
                     <Route path="/bballceltics" component={BasketballNewsFour}/>
+                    <Route path="/footballcity" component={FootballNewsTwo}/>
+                    <Route path="/footballbarca" component={FootballNewsThree}/>
+                    <Route path="/footballajax" component={FootballNewsFour}/>
                 </div>
 
             </BrowserRouter>

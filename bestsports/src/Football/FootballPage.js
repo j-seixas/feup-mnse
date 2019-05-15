@@ -72,20 +72,20 @@ class App extends Component {
                         </Row>
                         <Row>
                             <NavLink to="/footballnews">
-                                <Card style={this.cardStyle}>
-                                <CardImg top src="https://main-bet.com/uploads/posts/2019-01/1547109034_sporting-lisbon-fc-porto-h2h-fc-porto-vs-sporting-cp-highlights.jpg" />
+                                <Card>
+                                <CardImg top src="http://bit.ly/2LTJK4G" />
                                     <CardBody>
-                                        <p>Porto vs Sporting é uma merda</p>
+                                        <p>Juventus beat Fiorentina 2-1 and are the Serie A champions</p>
                                     </CardBody>
                                 </Card>
                             </NavLink>
                         </Row>
                         <Row>
-                            <NavLink to="/footballnews">
-                                <Card style={this.cardStyle}>
-                                <CardImg top src="https://main-bet.com/uploads/posts/2019-01/1547109034_sporting-lisbon-fc-porto-h2h-fc-porto-vs-sporting-cp-highlights.jpg" />
+                            <NavLink to="/footballcity">
+                                <Card>
+                                <CardImg top src="http://bit.ly/30igtnL" />
                                     <CardBody>
-                                        <p>Porto vs Sporting é uma merda</p>
+                                        <p>Manchester City are Premier League Champions!!</p>
                                     </CardBody>
                                 </Card>
                             </NavLink>
@@ -98,21 +98,21 @@ class App extends Component {
                         <Button theme="secondary">Success</Button>
                         </Row>
                         <Row>
-                            <NavLink to="/footballnews">
-                                <Card style={this.cardStyle}>
-                                <CardImg top src="https://main-bet.com/uploads/posts/2019-01/1547109034_sporting-lisbon-fc-porto-h2h-fc-porto-vs-sporting-cp-highlights.jpg" />
+                            <NavLink to="/footballbarca">
+                                <Card>
+                                <CardImg top src="http://bit.ly/2VFmR9C" />
                                     <CardBody>
-                                        <p>Porto vs Sporting é uma merda</p>
+                                        <p>Liverpool shockingly eliminate Barcelona</p>
                                     </CardBody>
                                 </Card>
                             </NavLink>
                         </Row>
                         <Row>
-                            <NavLink to="/footballnews">
-                                <Card style={this.cardStyle}>
-                                <CardImg top src="https://main-bet.com/uploads/posts/2019-01/1547109034_sporting-lisbon-fc-porto-h2h-fc-porto-vs-sporting-cp-highlights.jpg" />
+                            <NavLink to="/footballajax">
+                                <Card>
+                                <CardImg top src="https://cnn.it/2LHzs7R" />
                                     <CardBody>
-                                        <p>Porto vs Sporting é uma merda</p>
+                                        <p>Ajax victim of last minute goal heartbreaker</p>
                                     </CardBody>
                                 </Card>
                             </NavLink>
