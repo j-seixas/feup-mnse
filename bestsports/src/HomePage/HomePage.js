@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Button, Container, Row, Col, Card, CardBody, CardImg, CardText } from "shards-react";
+import { Button, Container, Row, Col, Card, CardBody, CardImg, Badge } from "shards-react";
 import { NavLink } from "react-router-dom";
 import './HomePage.css';
 //import NavbarComponent from '../Components/NavbarComponent'
@@ -47,30 +47,44 @@ class App extends Component {
                 <div className="scoreBar">
                     <Container>
                         <Col>
-                            <Row>
-                                <h1>Some Basketball Scores</h1>
-                            </Row>
-                            <Row>
-                                Philadelphia 76ers 102 - 111 Brooklyn Nets
-                            </Row>
-                            <Row>
-                                Toronto Raptors 101 - 104 Orlando Magic
-                            </Row>
-                            <Row>
-                                GS Warriors 121 - 104 LA Clippers
-                            </Row>
-                            <Row>
-                                Denver Nuggets 96 - 101 SA Spurs
-                            </Row>
-                            <Row>
-                                Boston Celtics 84 - 74 Indiana Pacers
-                            </Row>
-                            <Row>
-                                POR Trail Blazers 104 - 99 OKC Thunder
-                            </Row>
-                            <Row>
-                                Milwaukee Bucks 121 - 86 Detroit Pistons
-                            </Row>
+                        <h1 className="titleScoreBar">Basketball<br></br>Scores</h1>
+                            <Card small className="scoresWrapper">
+                                <CardBody className="scoreLine" small>
+                                    <p className="leftTeam">Philadelphia 76ers</p>
+                                    <Badge className="score" outline pill theme="dark">102 - 101</Badge>
+                                    <p className="rightTeam">Brooklyn Nets</p>
+                                </CardBody>
+                                <CardBody className="scoreLine" small>
+                                    <p className="leftTeam">Toronto Raptors</p>
+                                    <Badge className="score" outline pill theme="dark">101 - 104</Badge>
+                                    <p className="rightTeam">Orlando Magic</p>
+                                </CardBody>
+                                <CardBody className="scoreLine" small>
+                                    <p className="leftTeam">GS Warriors</p>
+                                    <Badge className="score" outline pill theme="dark">121 - 104</Badge>
+                                    <p className="rightTeam">LA Clippers</p>
+                                </CardBody>
+                                <CardBody className="scoreLine" small>
+                                    <p className="leftTeam">Denver Nuggets</p>
+                                    <Badge className="score" outline pill theme="dark">96 - 101</Badge>
+                                    <p className="rightTeam">SA Spurs</p>
+                                </CardBody>
+                                <CardBody className="scoreLine" small>
+                                    <p className="leftTeam">Boston Celtics</p>
+                                    <Badge className="score" outline pill theme="dark">84 - 74</Badge>
+                                    <p className="rightTeam">Indiana Pacers</p>
+                                </CardBody>
+                                <CardBody className="scoreLine" small>
+                                    <p className="leftTeam">POR Trail Blazers</p>
+                                    <Badge className="score" outline pill theme="dark">104 - 99</Badge>
+                                    <p className="rightTeam">OKC Thunder</p>
+                                </CardBody>
+                                <CardBody className="scoreLine" small>
+                                    <p className="leftTeam">Milwaukee</p>
+                                    <Badge className="score" outline pill theme="dark">121 - 86</Badge>
+                                    <p className="rightTeam">Detroit Pistons</p>
+                                </CardBody>
+                            </Card>
                         </Col>
                     </Container>
                 </div>
@@ -106,65 +120,44 @@ class App extends Component {
                 <div className="scoreBar">
                     <Container>
                         <Col>
-                            <Row>
-                                <h1>Some Football Scores</h1>
-                            </Row>
-                            <Row>
-                                <Card small className="scoresWrapper">
-                                    <CardBody className="scoreLine" small>
-                                        <p className="leftTeam">FC Porto</p>
-                                        <p className="score">4 - 0</p>
-                                        <p className="rightTeam">Desportivo das Aves</p>
-                                          
-                                    </CardBody>
-                                    <CardBody className="scoreLine" small>
-                                        <p className="leftTeam">SC Sporting</p>
-                                        <p className="score">8 - 1</p>
-                                        <p className="rightTeam">Belenenses SAD</p>
-                                    </CardBody>
-                                    <CardBody className="scoreLine" small>
-                                        <p className="leftTeam">Moreirense</p>
-                                        <p className="score">1 - 2</p>
-                                        <p className="rightTeam">Rio Ave</p>
-                                    </CardBody>
-                                    <CardBody className="scoreLine" small>
-                                        <p className="leftTeam">Feirense</p>
-                                        <p className="score">4 - 4</p>
-                                        <p className="rightTeam">Desportivo Chaves</p>
-                                    </CardBody>
-                                    <CardBody className="scoreLine" small>
-                                        <p className="leftTeam">Marítimo</p>
-                                        <p className="score">1 - 0</p>
-                                        <p className="rightTeam">SC Braga</p>
-                                    </CardBody>
-
-                                </Card>
-                                <Card small >
-                                    <CardBody>
-                                        SC Sporting 8 - 1 Belenenses SAD
-                                    </CardBody>
-
-                                </Card>
-                                
-                            </Row>
-                            <Row>
-                                SC Sporting 8 - 1 Belenenses SAD
-                            </Row>
-                            <Row>
-                                Moreirense 1 - 2 Rio Ave
-                            </Row>
-                            <Row>
-                                Feirense 4 - 4 Desportivo Chaves
-                            </Row>
-                            <Row>
-                                Marítimo 1 - 0 SC Braga
-                            </Row>
-                            <Row>
-                                Tondela 1 - 3 Santa Clara
-                            </Row>
-                            <Row>
-                                Vitória SC 2 - 2 Nacional da Madeira
-                            </Row>
+                            <h1 className="titleScoreBar">Football<br></br>Scores</h1>
+                            <Card small className="scoresWrapper">
+                                <CardBody className="scoreLine" small>
+                                    <p className="leftTeam">FC Porto</p>
+                                    <Badge className="score" outline pill theme="dark">4 - 0</Badge>
+                                    <p className="rightTeam">Desportivo das Aves</p>
+                                </CardBody>
+                                <CardBody className="scoreLine" small>
+                                    <p className="leftTeam">SC Sporting</p>
+                                    <Badge className="score" outline pill theme="dark">8 - 1</Badge>
+                                    <p className="rightTeam">Belenenses SAD</p>
+                                </CardBody>
+                                <CardBody className="scoreLine" small>
+                                    <p className="leftTeam">Moreirense</p>
+                                    <Badge className="score" outline pill theme="dark">1 - 2</Badge>
+                                    <p className="rightTeam">Rio Ave</p>
+                                </CardBody>
+                                <CardBody className="scoreLine" small>
+                                    <p className="leftTeam">Feirense</p>
+                                    <Badge className="score" outline pill theme="dark">4 - 4</Badge>
+                                    <p className="rightTeam">Desportivo Chaves</p>
+                                </CardBody>
+                                <CardBody className="scoreLine" small>
+                                    <p className="leftTeam">Marítimo</p>
+                                    <Badge className="score" outline pill theme="dark">1 - 0</Badge>
+                                    <p className="rightTeam">SC Braga</p>
+                                </CardBody>
+                                <CardBody className="scoreLine" small>
+                                    <p className="leftTeam">Tondela</p>
+                                    <Badge className="score" outline pill theme="dark">1 - 3</Badge>
+                                    <p className="rightTeam">Santa Clara</p>
+                                </CardBody>
+                                <CardBody className="scoreLine" small>
+                                    <p className="leftTeam">Vitória SC</p>
+                                    <Badge className="score" outline pill theme="dark">2 - 2</Badge>
+                                    <p className="rightTeam">Nacional da Madeira</p>
+                                </CardBody>
+                            </Card>
                         </Col>
                     </Container>
                 </div>
