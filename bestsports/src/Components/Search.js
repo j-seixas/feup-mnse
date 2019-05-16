@@ -254,20 +254,45 @@ class Search extends Component {
   }
 
   getInfo = () => {
-    /*axios.get(`${API_URL}?api_key=${API_KEY}&prefix=${this.state.query}&limit=7`)
-    .then(({ data }) => {
-      this.setState({
-        results: data.data
-      })
-    })*/
+    let result = [];
+
+    for (let i = 0; i < news.length; i++) {
+      if (news[i].content.toLowerCase().search(this.state.query.toLowerCase()) !== -1) { //if exists in the content of the news
+        if (result.length === 0) {
+          result.push(news[i]);
+        }
+        else {
+          let exists = false;
+          for (let j = 0; j < result.length; j++) {
+            // checks if it has duplicate
+            if (result[j].title === news[i].title) {
+              exists = true
+            }
+          }
+          if (!exists) { 
+            result.push(news[i]);
+          }
+        }
+      }
+    }
+    //add to results
+    this.setState({
+      results: result
+    });
+
   }
 
   handleInputChange = () => {
     this.setState({
       query: this.search.value
     }, () => {
-      if (this.state.query && this.state.query.length > 1) {
+      if (this.state.query && this.state.query.length > 1) { //only checks query if it has more than 1 char
         this.getInfo()
+      }
+      else {
+        this.setState({
+          results: []
+        });
       }
     })
   }
