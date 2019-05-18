@@ -17,46 +17,46 @@ class App extends Component {
                             <h1>Recent Scores</h1>
                         </Row>
                         <Row>
-                            Boston Celtics 108 - 107 Milwaukee Bucks
+                            Houston Rockets 112 - 108 GS Warriors
                         </Row>
                         <Row>
-                            Boston Celtics 108 - 107 Milwaukee Bucks
+                            Toronto Raptors 125 - 89 Philadelphia 76ers
                         </Row>
                         <Row>
-                            Boston Celtics 108 - 107 Milwaukee Bucks
+                            Denver Nuggets 124 - 98 POR Trail Blazers
                         </Row>
                         <Row>
-                            Boston Celtics 108 - 107 Milwaukee Bucks
+                            Milwaukee Bucks 116 - 91 Boston Celtics
                         </Row>
                         <Row>
-                            Boston Celtics 108 - 107 Milwaukee Bucks
+                            GS Warriors 104 - 99 Houston Rockets
                         </Row>
                         <Row>
-                            Boston Celtics 108 - 107 Milwaukee Bucks
+                            Philadelphia 76ers 112 - 101 Toronto Raptors
                         </Row>
                         <Row>
-                            Boston Celtics 108 - 107 Milwaukee Bucks
+                            POR Trail Blazers 119 - 108 Denver Nuggets
                         </Row>
                         <Row>
-                            Boston Celtics 108 - 107 Milwaukee Bucks
+                            Houston Rockets 113 - 118 GS Warriors
                         </Row>
                         <Row>
-                            Boston Celtics 108 - 107 Milwaukee Bucks
+                            Denver Nuggets 96 - 100 POR Trail Blazers
                         </Row>
                         <Row>
-                            Boston Celtics 108 - 107 Milwaukee Bucks
+                            Toronto Raptors 92 - 90 Philadelphia 76ers
                         </Row>
                         <Row>
-                            Boston Celtics 108 - 107 Milwaukee Bucks
+                            GS Warriors 116 - 94 POR Trail Blazers
                         </Row>
                         <Row>
-                            Boston Celtics 108 - 107 Milwaukee Bucks
+                            Milwaukee Bucks 108 - 100 Toronto Raptors
                         </Row>
                         <Row>
-                            Boston Celtics 108 - 107 Milwaukee Bucks
+                            GS Warriors 114 - 111 POR Trail Blazers
                         </Row>
                         <Row>
-                            Boston Celtics 108 - 107 Milwaukee Bucks
+                            Milwaukee Bucks 125 - 103 Toronto Raptors
                         </Row>
                     </Col>
 
