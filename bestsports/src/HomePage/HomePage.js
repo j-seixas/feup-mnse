@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import { Button, Container, Row, Col, Card, CardBody, CardImg, Badge } from "shards-react";
+import { Button, Container, Row, Col, Card, CardBody, CardImg, Badge, CardImgOverlay, CardTitle } from "shards-react";
 import { NavLink } from "react-router-dom";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import './HomePage.css';
 //import NavbarComponent from '../Components/NavbarComponent'
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -47,7 +48,7 @@ class App extends Component {
                 <div className="scoreBar">
                     <Container>
                         <Col>
-                        <h1 className="titleScoreBar">Basketball<br></br>Scores</h1>
+                            <h1 className="titleScoreBar">Basketball<br></br>Scores</h1>
                             <Card small className="scoresWrapper">
                                 <CardBody className="scoreLine" small>
                                     <p className="leftTeam">Philadelphia 76ers</p>
@@ -89,33 +90,44 @@ class App extends Component {
                     </Container>
                 </div>
                 <div className="highlights">
-                    <Container>
-                        <Col>
-                            <Row>
-                                <NavLink to="/basketballnews">
-                                    <Card>
-                                        <CardImg top src="http://bit.ly/2ZZO31G" />
-                                        <CardBody>
-                                            <p>Magic stun No. 2 seed Raptors in final moments of Game 1</p>
-                                        </CardBody>
-                                    </Card>
-                                </NavLink>
-                            </Row>
-                            <Row>
-                                <NavLink to="/footballnews">
-                                    <Card>
-                                        <CardImg top src="http://jornaldoluxemburgo.com/wp-content/uploads/2017/12/DOC.20171201.23347392.MA414.jpg" />
-                                        <CardBody>
-                                            <p>Sporting “atropela” Belenenses SAD no Jamor (8-1) com hat-trick de Bruno Fernandes e regresso de Dost </p>
-                                        </CardBody>
-                                    </Card>
-                                </NavLink>
-                            </Row>
-                            <Row>
-                                <Button theme="dark" onClick={() => this.playAudio("http://freesound.org/data/previews/191/191929_923993-lq.mp3")}>Play/Stop</Button>
-                            </Row>
-                        </Col>
-                    </Container>
+                    <div className="newHighlight">
+                        <NavLink to="/basketballnews">
+                            <Card className="centerHighlight">
+                                <CardImg top bottom src="http://bit.ly/2ZZO31G" />
+                                <CardImgOverlay>
+                                    <CardTitle>
+                                        Magic stun No. 2 seed Raptors in final moments of Game 1
+                                            </CardTitle>
+                                    <Button size="lg" theme="light">
+                                        Read More
+                                                <FontAwesomeIcon icon="chevron-right" />
+                                    </Button>
+                                </CardImgOverlay>
+                                
+                            </Card>
+                        </NavLink>
+
+                    </div>
+                    <div className="newHighlight">
+                        <NavLink to="/footballnews">
+                            <Card className="centerHighlight">
+                                <CardImg top src="http://jornaldoluxemburgo.com/wp-content/uploads/2017/12/DOC.20171201.23347392.MA414.jpg" />
+                                <CardImgOverlay>
+                                    <CardTitle>
+                                        Sporting “atropela” Belenenses SAD no Jamor (8-1) com hat-trick de Bruno Fernandes e regresso de Dost
+                                            </CardTitle>
+                                    <Button size="lg" theme="light">
+                                        Read More
+                                                <FontAwesomeIcon icon="chevron-right" />
+                                    </Button>
+                                </CardImgOverlay>
+                            </Card>
+                        </NavLink>
+
+                    </div>
+                    <div>
+                        <Button theme="dark" onClick={() => this.playAudio("http://freesound.org/data/previews/191/191929_923993-lq.mp3")}>Play/Stop</Button>
+                    </div>
                 </div>
                 <div className="scoreBar">
                     <Container>
