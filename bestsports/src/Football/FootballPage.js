@@ -13,8 +13,7 @@ class App extends Component {
 
     render() {
         return (
-            <div className="App">
-            
+            <div className="App">            
             <Container>
                 <Row>
                     <Col>
@@ -92,61 +91,60 @@ class App extends Component {
                             </CardBody>
                         </Card>
                     </Col>
-
-                    <Col>
-                        <Row>
-                            <FormInput placeholder="Search..." />
-                        </Row>
-                        <Row>
-                            <NavLink to="/footballnews">
-                                <Card>
-                                <CardImg top src="http://bit.ly/2LTJK4G" />
-                                    <CardBody>
-                                        <p>Juventus beat Fiorentina 2-1 and are the Serie A champions</p>
-                                    </CardBody>
-                                </Card>
-                            </NavLink>
-                        </Row>
-                        <Row>
-                            <NavLink to="/footballcity">
-                                <Card>
-                                <CardImg top src="http://bit.ly/30igtnL" />
-                                    <CardBody>
-                                        <p>Manchester City are Premier League Champions!!</p>
-                                    </CardBody>
-                                </Card>
-                            </NavLink>
-                        </Row>
-                    </Col>
-                    <Col>
-                        <Row>
-                        <Button theme="secondary">Primary</Button>
-                        <Button theme="secondary">Secondary</Button>
-                        <Button theme="secondary">Success</Button>
-                        </Row>
-                        <Row>
-                            <NavLink to="/footballbarca">
-                                <Card>
-                                <CardImg top src="http://bit.ly/2VFmR9C" />
-                                    <CardBody>
-                                        <p>Liverpool shockingly eliminate Barcelona</p>
-                                    </CardBody>
-                                </Card>
-                            </NavLink>
-                        </Row>
-                        <Row>
-                            <NavLink to="/footballajax">
-                                <Card>
-                                <CardImg top src="https://cnn.it/2LHzs7R" />
-                                    <CardBody>
-                                        <p>Ajax victim of last minute goal heartbreaker</p>
-                                    </CardBody>
-                                </Card>
-                            </NavLink>
-                        </Row>
-                    </Col>
-                </Row>
-            </Container>
+                        <Col>
+                            <Row>
+                                <FormInput placeholder="Search..." />
+                            </Row>
+                            <Row>
+                                <NavLink to="/footballnews">
+                                    <Card>
+                                        <CardImg top src="http://bit.ly/2LTJK4G" />
+                                        <CardBody>
+                                            <p>Juventus beat Fiorentina 2-1 and are the Serie A champions</p>
+                                        </CardBody>
+                                    </Card>
+                                </NavLink>
+                            </Row>
+                            <Row>
+                                <NavLink to="/footballcity">
+                                    <Card>
+                                        <CardImg top src="http://bit.ly/30igtnL" />
+                                        <CardBody>
+                                            <p>Manchester City are Premier League Champions!!</p>
+                                        </CardBody>
+                                    </Card>
+                                </NavLink>
+                            </Row>
+                        </Col>
+                        <Col>
+                            <Row>
+                                <Button theme="secondary">Primary</Button>
+                                <Button theme="secondary">Secondary</Button>
+                                <Button theme="secondary">Success</Button>
+                            </Row>
+                            <Row>
+                                <NavLink to="/footballbarca">
+                                    <Card>
+                                        <CardImg top src="http://bit.ly/2VFmR9C" />
+                                        <CardBody>
+                                            <p>Liverpool shockingly eliminate Barcelona</p>
+                                        </CardBody>
+                                    </Card>
+                                </NavLink>
+                            </Row>
+                            <Row>
+                                <NavLink to="/footballajax">
+                                    <Card>
+                                        <CardImg top src="https://cnn.it/2LHzs7R" />
+                                        <CardBody>
+                                            <p>Ajax victim of last minute goal heartbreaker</p>
+                                        </CardBody>
+                                    </Card>
+                                </NavLink>
+                            </Row>
+                        </Col>
+                    </Row>
+                </Container>
             </div>
         );
     }

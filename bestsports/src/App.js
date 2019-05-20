@@ -1,6 +1,11 @@
 import React, {Component} from 'react';
 import {BrowserRouter, Route} from "react-router-dom";
 
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faChevronRight } from '@fortawesome/free-solid-svg-icons'
+
+
 import Home from "./HomePage/HomePage";
 import Basketball from "./Basketball/BasketballPage";
 import Football from "./Football/FootballPage";
@@ -14,6 +19,7 @@ import FootballNewsThree from "./News/FootballThree";
 import FootballNewsFour from "./News/FootballFour";
 import NavbarComponent from './Components/NavbarComponent';
 
+library.add(faChevronRight)
 
 class App extends Component {
     render() {
