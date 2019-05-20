@@ -1,0 +1,45 @@
+.titleScoreBar {
+    padding-top: 8%;
+    padding-bottom: 8%;
+}
+
+.scoreBar {
+    width: 25%;
+    flex-grow: 1;
+    -webkit-box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    -moz-box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.highlights {
+    width: 50%;
+    flex-grow: 2;
+}
+
+.scoresWrapper {
+    width: 100%;
+}
+
+.scoreLine {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+}
+
+.score {
+    align-self: center;
+    flex: 1
+}
+
+.leftTeam, .rightTeam, .score {
+    margin: 0%;
+}
+
+.leftTeam, .rightTeam {
+    flex: 3;
+    font-weight: bold;
+    text-align: center;
+    padding-left: 2%;
+    padding-right: 2%;
+}

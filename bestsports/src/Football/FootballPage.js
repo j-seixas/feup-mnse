@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import { Button, Container, Row, Col, Card, CardBody, CardImg, FormInput} from "shards-react";
+import { Button, Container, Row, Col, Card, CardBody, CardImg, FormInput, Badge} from "shards-react";
 import { NavLink } from "react-router-dom";
-import NavbarComponent from '../Components/NavbarComponent'
 import "bootstrap/dist/css/bootstrap.min.css";
 import "shards-ui/dist/css/shards.min.css"
 
@@ -19,51 +18,79 @@ class App extends Component {
             <Container>
                 <Row>
                     <Col>
-                        <Row>
-                            <h1>Recent Scores</h1>
-                        </Row>
-                        <Row>
-                            Vitória SC 5 - 1 Belenenses
-                        </Row>
-                        <Row>
-                            Chaves 1 - 2 Setúbal
-                        </Row>
-                        <Row>
-                            Nacional 0 - 4 FC Porto
-                        </Row>
-                        <Row>
-                            Rio Ave 2 - 3 SL Benfica
-                        </Row>
-                        <Row>
-                            Tottenham 2 - 2 Everton
-                        </Row>
-                        <Row>
-                            Man United 0 - 2 Cardiff City
-                        </Row>
-                        <Row>
-                            Watford 1 - 4 West Ham
-                        </Row>
-                        <Row>
-                            Southampton 1 - 1 Huddersfield
-                        </Row>
-                        <Row>
-                            Leicester City 0 - 0 Chelsea
-                        </Row>
-                        <Row>
-                            Fulham 0 - 4 Newcastle
-                        </Row>
-                        <Row>
-                            SPAL 1 - 2 Napoli
-                        </Row>
-                        <Row>
-                            Roma 2 - 0 Juventus
-                        </Row>
-                        <Row>
-                            Bologna 4 - 1 Parma
-                        </Row>
-                        <Row>
-                            Inter Milan 2 - 0 Chievo
-                        </Row>
+                        <h1 className="titleScoreBar">Basketball<br></br>Scores</h1>
+                        <Card small className="scoresWrapper">
+                            <CardBody className="scoreLine" small>
+                                <p className="leftTeam">Vitória SC</p>
+                                <Badge className="score" outline pill theme="dark">5 - 1</Badge>
+                                <p className="rightTeam">Belenenses</p>
+                            </CardBody>
+                            <CardBody className="scoreLine" small>
+                                <p className="leftTeam">Chaves</p>
+                                <Badge className="score" outline pill theme="dark">1 - 2</Badge>
+                                <p className="rightTeam">Setúbal</p>
+                            </CardBody>
+                            <CardBody className="scoreLine" small>
+                                <p className="leftTeam">Nacional</p>
+                                <Badge className="score" outline pill theme="dark">0 - 4</Badge>
+                                <p className="rightTeam">FC Porto</p>
+                            </CardBody>
+                            <CardBody className="scoreLine" small>
+                                <p className="leftTeam">Rio Ave</p>
+                                <Badge className="score" outline pill theme="dark">2 - 3</Badge>
+                                <p className="rightTeam">SL Benfica</p>
+                            </CardBody>
+                            <CardBody className="scoreLine" small>
+                                <p className="leftTeam">Tottenham</p>
+                                <Badge className="score" outline pill theme="dark">2 - 2</Badge>
+                                <p className="rightTeam">Everton</p>
+                            </CardBody>
+                            <CardBody className="scoreLine" small>
+                                <p className="leftTeam">Man United</p>
+                                <Badge className="score" outline pill theme="dark">0 - 2</Badge>
+                                <p className="rightTeam">Cardiff City</p>
+                            </CardBody>
+                            <CardBody className="scoreLine" small>
+                                <p className="leftTeam">Watford</p>
+                                <Badge className="score" outline pill theme="dark">1 - 4</Badge>
+                                <p className="rightTeam">West Ham</p>
+                            </CardBody>
+                            <CardBody className="scoreLine" small>
+                                <p className="leftTeam">Southampton</p>
+                                <Badge className="score" outline pill theme="dark">1 - 1</Badge>
+                                <p className="rightTeam">Huddersfield</p>
+                            </CardBody>
+                            <CardBody className="scoreLine" small>
+                                <p className="leftTeam">Leicester City</p>
+                                <Badge className="score" outline pill theme="dark">0 - 0</Badge>
+                                <p className="rightTeam">Chelsea</p>
+                            </CardBody>
+                            <CardBody className="scoreLine" small>
+                                <p className="leftTeam">Fulham</p>
+                                <Badge className="score" outline pill theme="dark">0 - 4</Badge>
+                                <p className="rightTeam">Newcastle</p>
+                            </CardBody>
+                            <CardBody className="scoreLine" small>
+                                <p className="leftTeam">SPAL</p>
+                                <Badge className="score" outline pill theme="dark">1 - 2</Badge>
+                                <p className="rightTeam">Napoli</p>
+                            </CardBody>
+                            <CardBody className="scoreLine" small>
+                                <p className="leftTeam">Roma</p>
+                                <Badge className="score" outline pill theme="dark">2 - 0</Badge>
+                                <p className="rightTeam">Juventus</p>
+                            </CardBody>
+                            <CardBody className="scoreLine" small>
+                                <p className="leftTeam">Bologna</p>
+                                <Badge className="score" outline pill theme="dark">4 - 1</Badge>
+                                <p className="rightTeam">Parma</p>
+                            </CardBody>
+                            <CardBody className="scoreLine" small>
+                                <p className="leftTeam">Inter Milan</p>
+                                <Badge className="score" outline pill theme="dark">2 - 0</Badge>
+                                <p className="rightTeam">Chievo</p>
+                            </CardBody>
+                        </Card>
                     </Col>
 
                     <Col>
