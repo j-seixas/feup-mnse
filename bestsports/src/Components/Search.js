@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Suggestions from './Suggestions'
+import "./search.css"
 
 const news = [
   {
@@ -269,7 +270,7 @@ class Search extends Component {
               exists = true
             }
           }
-          if (!exists) { 
+          if (!exists) {
             result.push(news[i]);
           }
         }
@@ -305,7 +306,9 @@ class Search extends Component {
           ref={input => this.search = input}
           onChange={this.handleInputChange}
         />
-        <Suggestions results={this.state.results} />
+        <div class="dropdown">
+          <Suggestions results={this.state.results} />
+        </div>
       </form>
     )
   }

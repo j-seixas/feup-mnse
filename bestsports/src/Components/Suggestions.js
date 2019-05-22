@@ -9,7 +9,13 @@ const Suggestions = (props) => {
 
     </li>
   ))
-  return <ul>{options}</ul>
+
+  if(options.length === 0){
+    return <ul>{options}</ul>
+  }else{
+    return <ul class="dropdown-content">{options}</ul>
+
+  }
 }
 
 export default Suggestions
