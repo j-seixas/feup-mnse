@@ -99,8 +99,7 @@ class App extends Component {
                                         Magic stun No. 2 seed Raptors in final moments of Game 1
                                             </CardTitle>
                                     <Button size="lg" theme="light">
-                                        Read More
-                                                <FontAwesomeIcon icon="chevron-right" />
+                                        Read More <FontAwesomeIcon icon="chevron-right" />
                                     </Button>
                                 </CardImgOverlay>
                                 
@@ -117,8 +116,7 @@ class App extends Component {
                                         Sporting “atropela” Belenenses SAD no Jamor (8-1) com hat-trick de Bruno Fernandes e regresso de Dost
                                             </CardTitle>
                                     <Button size="lg" theme="light">
-                                        Read More
-                                                <FontAwesomeIcon icon="chevron-right" />
+                                        Read More <FontAwesomeIcon icon="chevron-right" />
                                     </Button>
                                 </CardImgOverlay>
                             </Card>
