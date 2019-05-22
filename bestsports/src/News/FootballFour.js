@@ -3,7 +3,8 @@ import { Container, Row, Col } from "shards-react";
 import YouTube from 'react-youtube';
 import { FacebookShareButton, TwitterShareButton, FacebookIcon, TwitterIcon, } from 'react-share';
 import "bootstrap/dist/css/bootstrap.min.css";
-import "shards-ui/dist/css/shards.min.css"
+import "shards-ui/dist/css/shards.min.css";
+import "./news.css";
 
 class App extends Component {
     cardStyle = {
@@ -19,7 +20,7 @@ class App extends Component {
 
         const opts = {
             height: '390',
-            width: '640',
+            width: '750',
             playerVars: { // https://developers.google.com/youtube/player_parameters
                 autoplay: 1
             }
@@ -36,7 +37,7 @@ class App extends Component {
                                     onReady={this._onReady}
                                 />
                             </Row>
-                            <Row>
+                            <Row >
                                 <img width="200" height="300" src="http://bit.ly/2ZRAp0v" />
                                 <img width="200" height="300" src="http://bit.ly/2ZRAp0v" />
                                 <img width="200" height="300" src="http://bit.ly/2ZRAp0v" />
@@ -57,23 +58,25 @@ class App extends Component {
                                     But that winner appeared to have escaped from its clutches when Jan Vertonghen could only send his header against the crossbar before having his subsequent effort blocked on the line. When the fourth official signaled a minimum of five minutes of stoppage time to be play, Ajax's players appeared to collectively shrink by an inch. Tottenham sensed its moment and once again it was Moura with the final meaningful kick of the contest, driving a stake through Ajax hearts by firing home from 16-yards. Cue silence but for a few thousand souls from north London, drunk on delirium and no doubt a beer or two who must have had to pinch themselves to make sure it was real.
                                 </p>
                             </Row>
+                            <Row>
+                                <FacebookShareButton
+                                    url={shareUrl}
+                                    quote={title}
+                                    className="Demo__some-network__share-button">
+                                    <FacebookIcon
+                                        size={32}
+                                        round />
+                                </FacebookShareButton>
+                                <TwitterShareButton
+                                    url={shareUrl}
+                                    title={title}
+                                    className="Demo__some-network__share-button">
+                                    <TwitterIcon
+                                        size={32}
+                                        round />
+                                </TwitterShareButton>
+                            </Row>
                         </Col>
-                        <FacebookShareButton
-                            url={shareUrl}
-                            quote={title}
-                            className="Demo__some-network__share-button">
-                            <FacebookIcon
-                                size={32}
-                                round />
-                        </FacebookShareButton>
-                        <TwitterShareButton
-                            url={shareUrl}
-                            title={title}
-                            className="Demo__some-network__share-button">
-                            <TwitterIcon
-                                size={32}
-                                round />
-                        </TwitterShareButton>
                     </Row>
                 </Container>
             </div>

@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import { Container, Row, Col } from "shards-react";
+import YouTube from 'react-youtube';
+import { FacebookShareButton, TwitterShareButton, FacebookIcon, TwitterIcon} from 'react-share';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "shards-ui/dist/css/shards.min.css";
-import YouTube from 'react-youtube';
-import { FacebookShareButton, TwitterShareButton, FacebookIcon, TwitterIcon, } from 'react-share';
+import "./news.css";
 
 class BasketballOne extends Component {
     render() {
@@ -12,13 +13,13 @@ class BasketballOne extends Component {
 
         const opts = {
             height: '390',
-            width: '640',
+            width: '750',
             playerVars: { // https://developers.google.com/youtube/player_parameters
                 autoplay: 1
             }
         };
         return (
-            <div>
+            <div className="App">
                 <Container>
                     <Row>
                         <Col >
@@ -52,23 +53,25 @@ class BasketballOne extends Component {
                                     Aaron Gordon had 10 points and 10 rebounds, Evan Fournier scored 16 points and Jonathan Isaac had 11 as the No. 7-seeded Magic became the latest team to beat Toronto in the opening game of a playoff series. The Raptors are 2-14 in playoff openers.“We know who we are and this is one game,” Toronto’s Kyle Lowry said. “We’ve got to make sure we know who we are and execute what we can do. When we do what we are supposed to do, we are really, really good.”Leonard scored 25 points, Pascal Siakam had 24 and Fred VanVleet had 14 for the second-seeded Raptors, who reclaimed the lead after trailing by 16 points in the second quarter, but couldn’t hold on down the stretch.Toronto got 13 points apiece from Danny Green and Marc Gasol, but Lowry finished scoreless, missing all seven of his attempts. Lowry did have eight assists and seven rebounds.
                             </p>
                             </Row>
+                            <Row>
+                                <FacebookShareButton
+                                    url={shareUrl}
+                                    quote={title}
+                                    className="Demo__some-network__share-button">
+                                    <FacebookIcon
+                                        size={32}
+                                        round />
+                                </FacebookShareButton>
+                                <TwitterShareButton
+                                    url={shareUrl}
+                                    title={title}
+                                    className="Demo__some-network__share-button">
+                                    <TwitterIcon
+                                        size={32}
+                                        round />
+                                </TwitterShareButton>
+                            </Row>
                         </Col>
-                        <FacebookShareButton
-                            url={shareUrl}
-                            quote={title}
-                            className="Demo__some-network__share-button">
-                            <FacebookIcon
-                                size={32}
-                                round />
-                        </FacebookShareButton>
-                        <TwitterShareButton
-                            url={shareUrl}
-                            title={title}
-                            className="Demo__some-network__share-button">
-                            <TwitterIcon
-                                size={32}
-                                round />
-                        </TwitterShareButton>
                     </Row>
                 </Container>
             </div>

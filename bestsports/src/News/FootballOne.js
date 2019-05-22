@@ -1,14 +1,10 @@
 import React, { Component } from 'react';
 import { Container, Row, Col } from "shards-react";
+import { FacebookShareButton, TwitterShareButton, FacebookIcon, TwitterIcon, } from 'react-share';
 import YouTube from 'react-youtube';
 import "bootstrap/dist/css/bootstrap.min.css";
-import {
-    FacebookShareButton,
-    TwitterShareButton,
-    FacebookIcon,
-    TwitterIcon,
-} from 'react-share';
-import "shards-ui/dist/css/shards.min.css"
+import "shards-ui/dist/css/shards.min.css";
+import "./news.css";
 
 class App extends Component {
     cardStyle = {
@@ -16,14 +12,14 @@ class App extends Component {
         width: '10vw',
         height: '20vw',
     };
-    
+
     render() {
         const shareUrl = 'http://www.bestsports.com/footballnews';
         const title = 'Cristiano Ronaldo claims first league title since moving to Italy';
 
         const opts = {
             height: '390',
-            width: '640',
+            width: '750',
             playerVars: { // https://developers.google.com/youtube/player_parameters
                 autoplay: 1
             }
@@ -61,23 +57,25 @@ class App extends Component {
                                     The five-time Ballon d'Or winner told DAZN: 'My future? I will be at Juventus next year 1000 per cent, I'm very happy for the Scudetto & the Super Cup. 'We have behaved well in the Champions League, next year it will be better.' There were title celebrations earlier in the day for Juventus as the women's team, including England's Eniola Aluko, wrapped up their domestic title with victory over Verona. Aluko got herself a goal as Juventus women ran out 3-0 winners on the day after earlier strikes from Petronella Ekroth and Cristiana Grielli ensured the whole club swept the board with titles.
                             </p>
                             </Row>
+                            <Row>
+                                <FacebookShareButton
+                                    url={shareUrl}
+                                    quote={title}
+                                    className="Demo__some-network__share-button">
+                                    <FacebookIcon
+                                        size={32}
+                                        round />
+                                </FacebookShareButton>
+                                <TwitterShareButton
+                                    url={shareUrl}
+                                    title={title}
+                                    className="Demo__some-network__share-button">
+                                    <TwitterIcon
+                                        size={32}
+                                        round />
+                                </TwitterShareButton>
+                            </Row>
                         </Col>
-                    <FacebookShareButton
-                        url={shareUrl}
-                        quote={title}
-                        className="Demo__some-network__share-button">
-                        <FacebookIcon
-                            size={32}
-                            round />
-                    </FacebookShareButton>
-                    <TwitterShareButton
-                        url={shareUrl}
-                        title={title}
-                        className="Demo__some-network__share-button">
-                        <TwitterIcon
-                            size={32}
-                            round />
-                    </TwitterShareButton>
                     </Row>
                 </Container>
             </div>

@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import { Container, Row, Col } from "shards-react";
-import { FacebookShareButton, TwitterShareButton, FacebookIcon, TwitterIcon, } from 'react-share';
+import YouTube from 'react-youtube';
+import { FacebookShareButton, TwitterShareButton, FacebookIcon, TwitterIcon} from 'react-share';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "shards-ui/dist/css/shards.min.css";
-import YouTube from 'react-youtube';
+import "./news.css";
 
 class BasketballTwo extends Component {
     render() {
@@ -11,13 +12,13 @@ class BasketballTwo extends Component {
         const title = 'Philadelphia 76ers: embarrassing Game 1 loss to Brooklyn Nets';
         const opts = {
             height: '390',
-            width: '640',
+            width: '750',
             playerVars: { // https://developers.google.com/youtube/player_parameters
                 autoplay: 1
             }
         };
         return (
-            <div>
+            <div className="App">
                 <Container>
                     <Row>
                         <Col>
@@ -49,23 +50,25 @@ class BasketballTwo extends Component {
                                     Even so, the Sixers got a vintage Jimmy Butler performance and still struggled to keep pace with the sixth-seeded, inexperienced Nets. It wasn’t the most encouraging loss. It was even less encouraging before Toronto and Denver proceeded to drop their Game 1s later in the evening.
                             </p>
                             </Row>
+                            <Row>
+                                <FacebookShareButton
+                                    url={shareUrl}
+                                    quote={title}
+                                    className="Demo__some-network__share-button">
+                                    <FacebookIcon
+                                        size={32}
+                                        round />
+                                </FacebookShareButton>
+                                <TwitterShareButton
+                                    url={shareUrl}
+                                    title={title}
+                                    className="Demo__some-network__share-button">
+                                    <TwitterIcon
+                                        size={32}
+                                        round />
+                                </TwitterShareButton>
+                            </Row>
                         </Col>
-                        <FacebookShareButton
-                            url={shareUrl}
-                            quote={title}
-                            className="Demo__some-network__share-button">
-                            <FacebookIcon
-                                size={32}
-                                round />
-                        </FacebookShareButton>
-                        <TwitterShareButton
-                            url={shareUrl}
-                            title={title}
-                            className="Demo__some-network__share-button">
-                            <TwitterIcon
-                                size={32}
-                                round />
-                        </TwitterShareButton>
                     </Row>
                 </Container>
             </div>

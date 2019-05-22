@@ -1,0 +1,21 @@
+div.App .container{
+    padding: 3%;
+    max-width: none;
+}
+
+div.App .col{
+    padding: 0%;
+}
+
+div.App > div.container > div.row > div.col > div.row:first-child { /*images*/
+    
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.App > div.container > div.row > div.col > div.row:last-child > img{ /*images*/
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

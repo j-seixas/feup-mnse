@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import { Container, Row, Col } from "shards-react";
+import YouTube from 'react-youtube';
+import { FacebookShareButton, TwitterShareButton, FacebookIcon, TwitterIcon} from 'react-share';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "shards-ui/dist/css/shards.min.css";
-import YouTube from 'react-youtube';
-import { FacebookShareButton, TwitterShareButton, FacebookIcon, TwitterIcon, } from 'react-share';
+import "./news.css";
 
 class BasketballThree extends Component {
     render() {
@@ -11,13 +12,13 @@ class BasketballThree extends Component {
         const title = 'Houston Rockets win Game 4 vs. Warriors to tie series 2-2';
         const opts = {
             height: '390',
-            width: '640',
+            width: '750',
             playerVars: { // https://developers.google.com/youtube/player_parameters
                 autoplay: 1
             }
         };
         return (
-            <div>
+            <div className="App">
                 <Container>
                     <Row>
                         <Col>
@@ -49,23 +50,25 @@ class BasketballThree extends Component {
                                     Houston had a 10-point lead with about four minutes left before a 5-2 run, with a 3 from Curry, got them within 108-101. Green was shaken up when Harden inadvertently knocked him in the head on the follow through after he made a 3-pointer that put Houston up 71-59 with nine minutes left in the third quarter. Green fell to the court where he remained holding the left side of his head for a couple of minutes. The Warriors called a timeout and he collected himself and remained in the game. The lead grew to 77-60 before Golden State got going.
                             </p>
                             </Row>
+                            <Row>
+                                <FacebookShareButton
+                                    url={shareUrl}
+                                    quote={title}
+                                    className="Demo__some-network__share-button">
+                                    <FacebookIcon
+                                        size={32}
+                                        round />
+                                </FacebookShareButton>
+                                <TwitterShareButton
+                                    url={shareUrl}
+                                    title={title}
+                                    className="Demo__some-network__share-button">
+                                    <TwitterIcon
+                                        size={32}
+                                        round />
+                                </TwitterShareButton>
+                            </Row>
                         </Col>
-                        <FacebookShareButton
-                            url={shareUrl}
-                            quote={title}
-                            className="Demo__some-network__share-button">
-                            <FacebookIcon
-                                size={32}
-                                round />
-                        </FacebookShareButton>
-                        <TwitterShareButton
-                            url={shareUrl}
-                            title={title}
-                            className="Demo__some-network__share-button">
-                            <TwitterIcon
-                                size={32}
-                                round />
-                        </TwitterShareButton>
                     </Row>
                 </Container>
             </div>

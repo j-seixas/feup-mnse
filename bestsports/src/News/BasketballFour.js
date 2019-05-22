@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import { Container, Row, Col } from "shards-react";
+import YouTube from 'react-youtube';
+import { FacebookShareButton, TwitterShareButton, FacebookIcon, TwitterIcon} from 'react-share';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "shards-ui/dist/css/shards.min.css";
-import YouTube from 'react-youtube';
-import { FacebookShareButton, TwitterShareButton, FacebookIcon, TwitterIcon, } from 'react-share';
+import "./news.css";
 
 class BasketballFour extends Component {
     render() {
@@ -11,13 +12,13 @@ class BasketballFour extends Component {
         const title = 'Kyrie Irving on Shooting Struggles in Bucks vs. Celtics Game 4: \'Who Cares?\'';
         const opts = {
             height: '390',
-            width: '640',
+            width: '750',
             playerVars: { // https://developers.google.com/youtube/player_parameters
                 autoplay: 1
             }
         };
         return (
-            <div>
+            <div className="App">
                 <Container>
                     <Row>
                         <Col>
@@ -49,23 +50,25 @@ class BasketballFour extends Component {
                                     However, Giannis Antetokounmpo's star has shone brighter in this series and did so again Monday, when he tallied 39 points, 16 rebounds and four assists. He put his team on his back on the road as no other Buck scored more than 15 points and Khris Middleton shot just 4-of-19 from the field. Boston didn't need Irving to be a one-man show like Antetokounmpo. Rather, even a solid shooting performance from the 27-year-old likely would have been enough to tie the series considering each of Boston's other four starters scored 16 or more points. (Irving finished with 23.)
                             </p>
                             </Row>
+                            <Row>
+                                <FacebookShareButton
+                                    url={shareUrl}
+                                    quote={title}
+                                    className="Demo__some-network__share-button">
+                                    <FacebookIcon
+                                        size={32}
+                                        round />
+                                </FacebookShareButton>
+                                <TwitterShareButton
+                                    url={shareUrl}
+                                    title={title}
+                                    className="Demo__some-network__share-button">
+                                    <TwitterIcon
+                                        size={32}
+                                        round />
+                                </TwitterShareButton>
+                            </Row>
                         </Col>
-                        <FacebookShareButton
-                            url={shareUrl}
-                            quote={title}
-                            className="Demo__some-network__share-button">
-                            <FacebookIcon
-                                size={32}
-                                round />
-                        </FacebookShareButton>
-                        <TwitterShareButton
-                            url={shareUrl}
-                            title={title}
-                            className="Demo__some-network__share-button">
-                            <TwitterIcon
-                                size={32}
-                                round />
-                        </TwitterShareButton>
                     </Row>
                 </Container>
             </div>

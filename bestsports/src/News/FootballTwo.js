@@ -1,14 +1,10 @@
 import React, { Component } from 'react';
 import { Container, Row, Col } from "shards-react";
 import YouTube from 'react-youtube';
-import {
-    FacebookShareButton,
-    TwitterShareButton,
-    FacebookIcon,
-    TwitterIcon,
-} from 'react-share';
+import { FacebookShareButton, TwitterShareButton, FacebookIcon, TwitterIcon } from 'react-share';
 import "bootstrap/dist/css/bootstrap.min.css";
-import "shards-ui/dist/css/shards.min.css"
+import "shards-ui/dist/css/shards.min.css";
+import "./news.css";
 
 class App extends Component {
     cardStyle = {
@@ -22,7 +18,7 @@ class App extends Component {
         const title = 'Manchester City retains Premier League title with win over Brighton';
         const opts = {
             height: '390',
-            width: '640',
+            width: '750',
             playerVars: { // https://developers.google.com/youtube/player_parameters
                 autoplay: 1
             }
@@ -60,23 +56,25 @@ class App extends Component {
                                     There was momentary panic for City when Murray headed in from a corner to give Brighton a shock lead, but that was erased barely a minute later when Sergio Aguero slotted the ball through Mat Ryan's legs to draw level. With Liverpool leading against Wolves, more goals were needed from the visitors. Laporte headed home unmarked from a corner to give his side a 2-1 lead 10 minutes before halftime, putting City firmly in the driving seat. Mahrez's right-footed strike on the edge of the area extended the lead midway through the second period, before Gundogan's sweetly-struck free-kick from 25 yards ultimately sealed the match -- and the title. Following the trophy lift on England's south coast, the City team is flying straight back to Manchester to celebrate at its home ground.
                                 </p>
                             </Row>
+                            <Row>
+                                <FacebookShareButton
+                                    url={shareUrl}
+                                    quote={title}
+                                    className="Demo__some-network__share-button">
+                                    <FacebookIcon
+                                        size={32}
+                                        round />
+                                </FacebookShareButton>
+                                <TwitterShareButton
+                                    url={shareUrl}
+                                    title={title}
+                                    className="Demo__some-network__share-button">
+                                    <TwitterIcon
+                                        size={32}
+                                        round />
+                                </TwitterShareButton>
+                            </Row>
                         </Col>
-                        <FacebookShareButton
-                            url={shareUrl}
-                            quote={title}
-                            className="Demo__some-network__share-button">
-                            <FacebookIcon
-                                size={32}
-                                round />
-                        </FacebookShareButton>
-                        <TwitterShareButton
-                            url={shareUrl}
-                            title={title}
-                            className="Demo__some-network__share-button">
-                            <TwitterIcon
-                                size={32}
-                                round />
-                        </TwitterShareButton>
                     </Row>
                 </Container>
             </div>
