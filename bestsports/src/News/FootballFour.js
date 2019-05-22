@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Container, Row, Col } from "shards-react";
 import YouTube from 'react-youtube';
+import { FacebookShareButton, TwitterShareButton, FacebookIcon, TwitterIcon, } from 'react-share';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "shards-ui/dist/css/shards.min.css"
 
@@ -12,6 +13,9 @@ class App extends Component {
     };
 
     render() {
+
+        const shareUrl = 'http://www.bestsports.com/footballajax';
+        const title = 'Tottenham stuns Ajax to make Champions League final';
 
         const opts = {
             height: '390',
@@ -54,6 +58,22 @@ class App extends Component {
                                 </p>
                             </Row>
                         </Col>
+                        <FacebookShareButton
+                            url={shareUrl}
+                            quote={title}
+                            className="Demo__some-network__share-button">
+                            <FacebookIcon
+                                size={32}
+                                round />
+                        </FacebookShareButton>
+                        <TwitterShareButton
+                            url={shareUrl}
+                            title={title}
+                            className="Demo__some-network__share-button">
+                            <TwitterIcon
+                                size={32}
+                                round />
+                        </TwitterShareButton>
                     </Row>
                 </Container>
             </div>

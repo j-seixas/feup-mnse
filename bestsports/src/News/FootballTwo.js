@@ -1,6 +1,12 @@
 import React, { Component } from 'react';
 import { Container, Row, Col } from "shards-react";
 import YouTube from 'react-youtube';
+import {
+    FacebookShareButton,
+    TwitterShareButton,
+    FacebookIcon,
+    TwitterIcon,
+} from 'react-share';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "shards-ui/dist/css/shards.min.css"
 
@@ -12,7 +18,8 @@ class App extends Component {
     };
 
     render() {
-
+        const shareUrl = 'http://www.bestsports.com/footballcity';
+        const title = 'Manchester City retains Premier League title with win over Brighton';
         const opts = {
             height: '390',
             width: '640',
@@ -44,7 +51,7 @@ class App extends Component {
                                     Manchester City retains Premier League title with win over Brighton
                                 </h1>
                                 <p>
-                                    Despite going a goal down in the first half, Man City retained the title after defeating Brighton 4-1 at the Amex Stadium, meaning Liverpool's victory against Wolves was in vain. Sergio Aguero, Aymeric Laporte, Riyad Mahrez, and Ilkay Gundogan all scored for the visitors after Glenn Murray had given the home side the lead on 25 minutes. It's the first time a team has won back-to-back titles since Sir Alex Ferguson's Manchester United in 2009, and City's total of 98 points is the second highest haul in Premier League history -- two shy of the 100 points Pep Guardiola's men accrued last year. 
+                                    Despite going a goal down in the first half, Man City retained the title after defeating Brighton 4-1 at the Amex Stadium, meaning Liverpool's victory against Wolves was in vain. Sergio Aguero, Aymeric Laporte, Riyad Mahrez, and Ilkay Gundogan all scored for the visitors after Glenn Murray had given the home side the lead on 25 minutes. It's the first time a team has won back-to-back titles since Sir Alex Ferguson's Manchester United in 2009, and City's total of 98 points is the second highest haul in Premier League history -- two shy of the 100 points Pep Guardiola's men accrued last year.
                                 </p>
                                 <p>
                                     In a remarkable season, Man City went toe-to-toe with Liverpool as both sides refused to bow down in the season's closing stages. City's campaign concluded on a run of 14 consecutive wins. It was against Newcastle on January 29 that the light blues last dropped points, some three-and-a-half months before lifting the title. Liverpool's 97 points, meanwhile, would have been enough to take top spot in every Premier League season bar the two most recent. "I think it was the hardest and most satisfying," Man City captain Vincent Kompany told Sky Sports, reflecting on his three previous titles with the club. "Liverpool were exceptional. There didn't deserve to be a loser. But I'm so happy for the team. We've got an incredible desire."
@@ -54,6 +61,22 @@ class App extends Component {
                                 </p>
                             </Row>
                         </Col>
+                        <FacebookShareButton
+                            url={shareUrl}
+                            quote={title}
+                            className="Demo__some-network__share-button">
+                            <FacebookIcon
+                                size={32}
+                                round />
+                        </FacebookShareButton>
+                        <TwitterShareButton
+                            url={shareUrl}
+                            title={title}
+                            className="Demo__some-network__share-button">
+                            <TwitterIcon
+                                size={32}
+                                round />
+                        </TwitterShareButton>
                     </Row>
                 </Container>
             </div>

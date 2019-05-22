@@ -1,11 +1,14 @@
 import React, { Component } from 'react';
 import { Container, Row, Col } from "shards-react";
+import { FacebookShareButton, TwitterShareButton, FacebookIcon, TwitterIcon, } from 'react-share';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "shards-ui/dist/css/shards.min.css";
 import YouTube from 'react-youtube';
 
 class BasketballTwo extends Component {
     render() {
+        const shareUrl = 'http://www.bestsports.com/bballphilly';
+        const title = 'Philadelphia 76ers: embarrassing Game 1 loss to Brooklyn Nets';
         const opts = {
             height: '390',
             width: '640',
@@ -47,6 +50,22 @@ class BasketballTwo extends Component {
                             </p>
                             </Row>
                         </Col>
+                        <FacebookShareButton
+                            url={shareUrl}
+                            quote={title}
+                            className="Demo__some-network__share-button">
+                            <FacebookIcon
+                                size={32}
+                                round />
+                        </FacebookShareButton>
+                        <TwitterShareButton
+                            url={shareUrl}
+                            title={title}
+                            className="Demo__some-network__share-button">
+                            <TwitterIcon
+                                size={32}
+                                round />
+                        </TwitterShareButton>
                     </Row>
                 </Container>
             </div>
