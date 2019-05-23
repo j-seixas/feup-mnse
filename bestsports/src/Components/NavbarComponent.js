@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, Button } from "shards-react";
 import { NavLink } from "react-router-dom";
-import Slide from '@material-ui/core/Slide';
 import Search from "./Search";
 import "./navbar.css";
 
@@ -16,7 +15,6 @@ class NavbarComponent extends Component {
             dropdownOpen: false,
             collapseOpen: false,
             gif: null,
-            checked: true,
             height: null
         };
     }
@@ -43,6 +41,7 @@ class NavbarComponent extends Component {
         this.handlegifs();
     }
 
+
     handlegifs() {
         if (window.location.href.search('football') !== -1) {
             this.setState({
@@ -57,49 +56,47 @@ class NavbarComponent extends Component {
         }
     }
 
-render() {
-    return (
-        <Navbar type="dark" theme="dark" sticky fixed expand="md">
-            <NavbarBrand href="/">BestSports</NavbarBrand>
-            <NavbarToggler onClick={this.toggleNavbar} />
+    render() {
+        return (
+            <Navbar type="dark" theme="dark" sticky fixed expand="md">
+                <NavbarBrand href="/">BestSports</NavbarBrand>
+                <NavbarToggler onClick={this.toggleNavbar} />
 
-            <Slide direction="right" in={this.state.checked} >
-                <img src={this.state.gif} height={this.state.height}></img>
-            </Slide>
+                <img id="animation" src={this.state.gif} height={this.state.height}></img>
 
-            <Nav navbar className="ml-auto">
-                <Search></Search>
-            </Nav>
+                <Nav navbar className="ml-auto">
+                    <Search></Search>
+                </Nav>
 
 
-            <Nav navbar className="ml-auto">
-                <NavItem>
-                    <NavLink to="/">
-                        <Button theme="dark" href="#">
-                            Home
+                <Nav navbar className="ml-auto">
+                    <NavItem>
+                        <NavLink to="/">
+                            <Button theme="dark" href="#">
+                                Home
                                 </Button>
-                    </NavLink>
+                        </NavLink>
 
-                </NavItem>
-                <NavItem>
-                    <NavLink to="/basketball">
-                        <Button theme="dark" href="#">
-                            Basketball
+                    </NavItem>
+                    <NavItem>
+                        <NavLink to="/basketball">
+                            <Button theme="dark" href="#">
+                                Basketball
                                 </Button>
-                    </NavLink>
-                </NavItem>
-                <NavItem>
-                    <NavLink to="/football">
-                        <Button theme="dark" href="#">
-                            Football
+                        </NavLink>
+                    </NavItem>
+                    <NavItem>
+                        <NavLink to="/football">
+                            <Button theme="dark" href="#">
+                                Football
                                 </Button>
-                    </NavLink>
-                </NavItem>
-            </Nav>
+                        </NavLink>
+                    </NavItem>
+                </Nav>
 
-        </Navbar>
-    );
-}
+            </Navbar>
+        );
+    }
 }
 
 export default NavbarComponent;
