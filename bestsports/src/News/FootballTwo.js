@@ -30,7 +30,7 @@ class App extends Component {
                         <Col>
                             <Row>
                                 <YouTube
-                                    videoId="mUzGY77a-cA"
+                                    videoId="WGaMRC15ri4"
                                     opts={opts}
                                     onReady={this._onReady}
                                 />
