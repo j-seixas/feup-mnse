@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Button, Container, Row, Col, Card, CardBody, CardImg, FormInput, Badge } from "shards-react";
+import { Container, Col, Card, CardBody, CardImg, Badge } from "shards-react";
 import { NavLink } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "shards-ui/dist/css/shards.min.css"
@@ -13,52 +13,52 @@ class App extends Component {
                         <Col>
                             <h1 className="titleScoreBar">Basketball<br></br>Scores</h1>
                             <Card small className="scoresWrapper">
-                                <CardBody className="scoreLine" small>
+                                <CardBody className="scoreLine">
                                     <p className="leftTeam">Houston Rockets</p>
                                     <Badge className="score" outline pill theme="dark">112 - 108</Badge>
                                     <p className="rightTeam">GS Warriors</p>
                                 </CardBody>
-                                <CardBody className="scoreLine" small>
+                                <CardBody className="scoreLine">
                                     <p className="leftTeam">Toronto Raptors</p>
                                     <Badge className="score" outline pill theme="dark">125 - 89</Badge>
                                     <p className="rightTeam">Philadelphia 76ers</p>
                                 </CardBody>
-                                <CardBody className="scoreLine" small>
+                                <CardBody className="scoreLine">
                                     <p className="leftTeam">Denver Nuggets</p>
                                     <Badge className="score" outline pill theme="dark">124 - 98</Badge>
                                     <p className="rightTeam">POR Trail Blazers</p>
                                 </CardBody>
-                                <CardBody className="scoreLine" small>
+                                <CardBody className="scoreLine">
                                     <p className="leftTeam">Milwaukee Bucks</p>
                                     <Badge className="score" outline pill theme="dark">116 - 91</Badge>
                                     <p className="rightTeam">Boston Celtics</p>
                                 </CardBody>
-                                <CardBody className="scoreLine" small>
+                                <CardBody className="scoreLine">
                                     <p className="leftTeam">GS Warriors</p>
                                     <Badge className="score" outline pill theme="dark">104 - 99</Badge>
                                     <p className="rightTeam">Houston Rockets</p>
                                 </CardBody>
-                                <CardBody className="scoreLine" small>
+                                <CardBody className="scoreLine">
                                     <p className="leftTeam">Philadelphia 76ers</p>
                                     <Badge className="score" outline pill theme="dark">112 - 101</Badge>
                                     <p className="rightTeam">Toronto Raptors</p>
                                 </CardBody>
-                                <CardBody className="scoreLine" small>
+                                <CardBody className="scoreLine">
                                     <p className="leftTeam">POR Trail Blazers</p>
                                     <Badge className="score" outline pill theme="dark">119 - 108</Badge>
                                     <p className="rightTeam">Denver Nuggets</p>
                                 </CardBody>
-                                <CardBody className="scoreLine" small>
+                                <CardBody className="scoreLine">
                                     <p className="leftTeam">Houston Rockets</p>
                                     <Badge className="score" outline pill theme="dark">113 - 118</Badge>
                                     <p className="rightTeam">GS Warriors</p>
                                 </CardBody>
-                                <CardBody className="scoreLine" small>
+                                <CardBody className="scoreLine">
                                     <p className="leftTeam">Denver Nuggets</p>
                                     <Badge className="score" outline pill theme="dark">96 - 100</Badge>
                                     <p className="rightTeam">POR Trail Blazers</p>
                                 </CardBody>
-                                <CardBody className="scoreLine" small>
+                                <CardBody className="scoreLine">
                                     <p className="leftTeam">Toronto Raptors</p>
                                     <Badge className="score" outline pill theme="dark">92 - 90</Badge>
                                     <p className="rightTeam">Philadelphia 76ers</p>

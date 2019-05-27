@@ -19,8 +19,8 @@ class NavbarComponent extends Component {
             playingUrl: '',
             audio: null,
             playing: false,
-            idAnimation:null,
-            audiofile : null
+            idAnimation: null,
+            audiofile: null
         };
     }
 
@@ -61,7 +61,7 @@ class NavbarComponent extends Component {
                 height: "80",
                 audiofile: require("../Assets/basketball.mp3")
             });
-        }else{
+        } else {
             this.setState({
                 gif: null,
                 height: null,
@@ -88,7 +88,7 @@ class NavbarComponent extends Component {
                 playing: null,
                 playingUrl: '',
                 audio: null,
-                idAnimation:"animation-ended"
+                idAnimation: "animation-ended"
             })
         }
     }
@@ -99,7 +99,7 @@ class NavbarComponent extends Component {
 
     render() {
         return (
-            <Navbar type="dark" theme="dark" sticky fixed expand="md">
+            <Navbar type="dark" theme="dark" expand="md">
                 <NavbarBrand href="/">BestSports</NavbarBrand>
                 <NavbarToggler onClick={this.toggleNavbar} />
 
@@ -117,22 +117,22 @@ class NavbarComponent extends Component {
                 <Nav navbar className="ml-auto">
                     <NavItem>
                         <NavLink to="/">
-                            <Button theme="dark" href="#">
+                            <Button theme="dark">
                                 Home
                                 </Button>
-                        </NavLink>
 
+                        </NavLink>
                     </NavItem>
                     <NavItem>
                         <NavLink to="/basketball">
-                            <Button theme="dark" href="#">
+                            <Button theme="dark">
                                 Basketball
                                 </Button>
                         </NavLink>
                     </NavItem>
                     <NavItem>
                         <NavLink to="/football">
-                            <Button theme="dark" href="#">
+                            <Button theme="dark">
                                 Football
                                 </Button>
                         </NavLink>
