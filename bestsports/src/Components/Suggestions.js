@@ -1,21 +1,23 @@
 import React from 'react'
+import { ListGroup, ListGroupItem} from "shards-react"
 
 const Suggestions = (props) => {
-  const options = props.results.map(r => (
-    <li >
-      <a href={r.route}>
-        {r.title}
-      </a>
+    const options = props.results.map(r => (
+        <ListGroupItem theme="light">
+            
+                <a href={r.route}>
+                {r.title}
+            </a>
+        
+        </ListGroupItem>
+    ))
 
-    </li>
-  ))
+    if (options.length === 0) {
+        return <ListGroup>{options}</ListGroup>
+    } else {
+        return <ListGroup className="dropdown-content">{options}</ListGroup>
 
-  if(options.length === 0){
-    return <ul>{options}</ul>
-  }else{
-    return <ul class="dropdown-content">{options}</ul>
-
-  }
+    }
 }
 
 export default Suggestions
