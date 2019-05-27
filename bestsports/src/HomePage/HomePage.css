@@ -81,6 +81,10 @@
     margin-right: 5%;
 }
 
+.newHighlight:last-of-type{
+    margin-bottom:4%;
+}
+
 @keyframes App-logo-spin {
     from {
         transform: rotate(0deg);

@@ -4,18 +4,22 @@
  * ---------------------------------------------- */
 
  @-webkit-keyframes run {
-        0% { left: 0%;}
-        100%{ left: 80%;}
-    }
+   0% { left: 0%;}
+   100%{ left: 80%;}
+}
 
 
 #animation {
 
-        position:absolute;
-    -webkit-animation:linear;
-    -webkit-animation-name: run;
-    -webkit-animation-duration: 5s;
-    animation-fill-mode: forwards;
+ position:absolute;
+ -webkit-animation:linear;
+ -webkit-animation-name: run;
+ -webkit-animation-duration: 5s;
+ animation-fill-mode: forwards;
+}
+
+#animation-ended {
+ display:none
 }
 
 

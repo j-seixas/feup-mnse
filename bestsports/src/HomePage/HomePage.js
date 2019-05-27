@@ -8,39 +8,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "shards-ui/dist/css/shards.min.css"
 
 class App extends Component {
-    constructor(props) {
-        super(props);
-
-        this.state = {
-            playingUrl: '',
-            audio: null,
-            playing: false
-        }
-    }
-
-    playAudio(previewUrl) {
-        let audio = new Audio(previewUrl);
-        if (!this.state.playing) {
-            audio.play();
-            this.setState({
-                playingUrl: previewUrl,
-                audio,
-                playing: true
-            })
-        }
-        else if (this.state.playing) {
-            this.state.audio.pause();
-            this.setState({
-                playing: null,
-                playingUrl: '',
-                audio: null
-            })
-        }
-    }
-
-    pauseAudio() {
-        this.state.audio.pause();
-    }
 
     render() {
         return (
@@ -102,7 +69,7 @@ class App extends Component {
                                         Read More <FontAwesomeIcon icon="chevron-right" />
                                     </Button>
                                 </CardImgOverlay>
-                                
+
                             </Card>
                         </NavLink>
 
@@ -122,9 +89,6 @@ class App extends Component {
                             </Card>
                         </NavLink>
 
-                    </div>
-                    <div>
-                        <Button theme="dark" onClick={() => this.playAudio("http://freesound.org/data/previews/191/191929_923993-lq.mp3")}>Play/Stop</Button>
                     </div>
                 </div>
                 <div className="scoreBar">

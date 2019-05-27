@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Container, Row, Col } from "shards-react";
 import YouTube from 'react-youtube';
-import { FacebookShareButton, TwitterShareButton, FacebookIcon, TwitterIcon} from 'react-share';
+import { FacebookShareButton, TwitterShareButton, FacebookIcon, TwitterIcon } from 'react-share';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "shards-ui/dist/css/shards.min.css";
 import "./news.css";
