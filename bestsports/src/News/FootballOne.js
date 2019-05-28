@@ -31,15 +31,15 @@ class App extends Component {
                         <Col>
                             <Row>
                                 <YouTube
-                                    videoId="cWjl0plUbOw"
+                                    videoId="3Hv5UfZPMpA"
                                     opts={opts}
                                     onReady={this._onReady}
                                 />
                             </Row>
                             <Row>
-                                <img width="200" height="300" src="http://bit.ly/2ZRAp0v" />
-                                <img width="200" height="300" src="http://bit.ly/2ZRAp0v" />
-                                <img width="200" height="300" src="http://bit.ly/2ZRAp0v" />
+                                <img width="200" alt="image1" height="300" src="http://bit.ly/2ZRAp0v" />
+                                <img width="200" alt="image2" height="300" src="http://bit.ly/2ZRAp0v" />
+                                <img width="200" alt="image3" height="300" src="http://bit.ly/2ZRAp0v" />
                             </Row>
                         </Col>
                         <Col>

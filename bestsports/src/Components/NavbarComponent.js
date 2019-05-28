@@ -106,7 +106,7 @@ class NavbarComponent extends Component {
                 <div>
                     <Button theme="dark" onClick={() => this.playAudio(this.state.audiofile)}>Play/Stop</Button>
                 </div>
-                <img id={this.state.idAnimation} src={this.state.gif} height={this.state.height}></img>
+                <img id={this.state.idAnimation} alt="gif" src={this.state.gif} height={this.state.height}></img>
 
 
                 <Nav navbar className="ml-auto">
