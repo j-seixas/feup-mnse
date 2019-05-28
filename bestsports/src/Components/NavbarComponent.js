@@ -51,14 +51,14 @@ class NavbarComponent extends Component {
         if (window.location.href.search('football') !== -1) {
             this.setState({
                 gif: "http://www.animatedimages.org/data/media/165/animated-football-and-soccer-image-0098.gif",
-                height: "60",
+                height: "44",
                 audiofile: require("../Assets/football.mp3")
 
             });
         } else if (window.location.href.search('basketball') !== -1 || window.location.href.search('bball') !== -1) {
             this.setState({
                 gif: "https://www.fg-a.com/sports/basketball-slam-dunk-2018.gif",
-                height: "80",
+                height: "44",
                 audiofile: require("../Assets/basketball.mp3")
             });
         } else {
