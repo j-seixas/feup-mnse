@@ -37,9 +37,8 @@ class App extends Component {
                                 />
                             </Row>
                             <Row>
-                                <img width="200" alt="image1" height="300" src="http://bit.ly/2ZRAp0v" />
-                                <img width="200" alt="image2" height="300" src="http://bit.ly/2ZRAp0v" />
-                                <img width="200" alt="image3" height="300" src="http://bit.ly/2ZRAp0v" />
+                                <img width="500" alt="image1" height="300" src="http://bit.ly/2XhDTI0" />
+                                <img width="200" alt="image3" height="300" src="http://bit.ly/2JG6HXv" />
                             </Row>
                         </Col>
                         <Col>
