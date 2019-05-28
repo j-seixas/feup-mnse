@@ -30,9 +30,8 @@ class BasketballFour extends Component {
                                 />
                             </Row>
                             <Row>
-                                <img width="200" alt="image1" height="300" src="https://i.pinimg.com/736x/ad/f8/5d/adf85d2c14d4f869f199140f5023c054.jpg" />
-                                <img width="200" alt="image2" height="300" src="https://www.hoopsrumors.com/files/2017/05/USATSI_9842804.jpg" />
-                                <img width="200" alt="image3" height="300" src="https://amp.businessinsider.com/images/5cba788eac92a1464643e1b3-750-1016.jpg" />
+                                <img width="350" alt="image1" height="250" src="http://bit.ly/2EEFtMw" />
+                                <img width="350" alt="image3" height="250" src="http://bit.ly/2EAlEG3" />
                             </Row>
                         </Col>
                         <Col>
