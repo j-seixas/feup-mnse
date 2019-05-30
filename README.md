@@ -13,3 +13,6 @@ cd bestsports
 npm i
 npm start
 ```
+
+
+The Report is in the folder 'deliverables'
